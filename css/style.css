@@ -458,6 +458,8 @@ ol {
 		height: 100%;
 		text-align: center;
 		background-size: cover;
+		background-image: url(/img/hero/logos\ \(1\).jpg);
+		background-attachment: fixed;
 	}
 	.hero__items {
 		position: relative;
@@ -1996,14 +1998,12 @@ ol {
 /* Background Images */
 .left {
     background-image: url('/img/bacl\ \(1\).png'); /* Change to your image */
-	background-size: contain;
-	background-attachment: fixed;
+	
 	font-family: sans-serif;
 }
 .right {
     background-image: url('/img/bacl\ \(1\).png'); /* Change to your image */
-	background-size: contain;
-	background-attachment: fixed;
+	
 	font-family: sans-serif;
 	
 }
