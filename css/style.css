@@ -486,6 +486,9 @@ ol {
     .hero {
         background: none; /* Remove background from hero */
     }
+	.about{
+		background: none;
+	}
 	.hero__items {
 		position: relative;
 		top: -200px;
