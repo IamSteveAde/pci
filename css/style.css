@@ -589,40 +589,44 @@ ol {
 	background-image: url(/img/Background\ Landscape.jpg);
 	background-size: contain;
 	background-attachment: fixed;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .unique-container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
-	margin-left: 20px;
+	
 }
 
 /* HEADER STYLES */
 .unique-header {
-	display: flex;
+	
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
 }
 
 .unique-header h2 {
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: bold;
 	color: white;
+	margin-bottom: 20px;
 }
 
 .unique-btn {
 	text-decoration: none;
-	padding: 10px 16px;
-	background: white;
-	color: #070f21;
-	border-radius: 20px;
-	font-weight: bold;
+	padding: 10px 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: transparent;
+	color: 	white;
+	border: solid 1px white;
 	transition: 0.3s ease;
-	font-size: 14px;
+	font-size: 18px;
 	z-index: 0;
-	width: 150px;
+	width: 150%;
 }
 
 .unique-btn:hover {
@@ -636,6 +640,7 @@ ol {
 	overflow: hidden;
 	width: 100%;
 	border-radius: 8px;
+	margin-top: 60px;
 }
 
 .unique-carousel-track {
@@ -644,12 +649,12 @@ ol {
 }
 
 .unique-carousel-item {
-	flex: 0 0 calc(100vw / 4);
-	max-width: calc(100vw / 4);
+	flex: 0 0 calc(100vw / 3);
+	max-width: calc(100vw / 3);
 	text-align: center;
 	border: solid 1px #6685c2;
 	padding: 15px;
-	margin-left: 10px;
+	margin-left: 30px;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease;
@@ -687,7 +692,7 @@ ol {
 /* MOBILE VIEW - 2 ITEMS PER SCREEN */
 @media (max-width: 768px) {
 	.unique-carousel-item {
-		flex: 0 0 40vw;
+		flex: 0 0 50vw;
 		max-width: 50vw;
 		margin-bottom: 200px;
 		
