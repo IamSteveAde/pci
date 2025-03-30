@@ -456,6 +456,8 @@ ol {
 @media (max-width: 768px) {
 	.hero{
 		height: 80%;
+		background-position: fixed;
+	
 		text-align: center;
 		
 		background-size: contain;
@@ -960,6 +962,7 @@ ol {
 	background-image: url(/img/Background\ Landscape.jpg);
 	background-size: contain;
 	background-attachment: fixed;
+	
 }
 
 .section-title {
