@@ -453,6 +453,9 @@ ol {
     justify-content: center;
 	background-image: url(/img/hero/logos\ \(1\).jpg);
 }
+.background-fixed{
+	
+}
 @media (max-width: 768px) {
 	.hero{
 		height: 80%;
@@ -463,6 +466,16 @@ ol {
 		background-size: contain;
 		background-image: url(/img/hero/logos\ \(1\).jpg);
 		background-attachment: fixed;
+	}
+	.background-fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: url('/img/hero/logos\ \(1\).jpg') no-repeat center center;
+		background-size: cover;
+		z-index: -1;
 	}
 	.hero__items {
 		position: relative;
