@@ -157,7 +157,9 @@
         items: 5,
         dots: false,
         nav: false,
-        smartSpeed: 1200,
+        smartSpeed: 5000,
+        autoplayTimeout: 1500,
+        autoplaySpeed: 500,
         autoHeight: false,
         autoplay: true,
         responsive: {
