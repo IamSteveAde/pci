@@ -1332,6 +1332,7 @@ ol {
 	width: 100%;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	background: white;
 }
 
 .testimonial__client__item .testimonial__client__text {
