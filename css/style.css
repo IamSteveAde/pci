@@ -592,9 +592,10 @@ ol {
 }
 
 .unique-container {
-	width: 90%;
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+	margin-left: 20px;
 }
 
 /* HEADER STYLES */
@@ -621,6 +622,7 @@ ol {
 	transition: 0.3s ease;
 	font-size: 14px;
 	z-index: 0;
+	width: 150px;
 }
 
 .unique-btn:hover {
@@ -647,7 +649,7 @@ ol {
 	text-align: center;
 	border: solid 1px #6685c2;
 	padding: 15px;
-	margin-left: 30px;
+	margin-left: 10px;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease;
