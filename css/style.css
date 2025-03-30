@@ -453,8 +453,16 @@ ol {
     justify-content: center;
 	background-image: url(/img/hero/logos\ \(1\).jpg);
 }
-.background-fixed{
-	
+.background-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/img/hero/logos (1).jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1; /* Keeps it behind content */
+    display: none; /* Hide by default */
 }
 @media (max-width: 768px) {
 	.hero{
@@ -464,19 +472,20 @@ ol {
 		text-align: center;
 		
 		background-size: contain;
-		background-image: url(/img/hero/logos\ \(1\).jpg);
+		
 		background-attachment: fixed;
 	}
-	.background-fixed {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background: url('/img/hero/logos\ \(1\).jpg') no-repeat center center;
-		background-size: cover;
-		z-index: -1;
-	}
+	body {
+        background: none; /* Remove fixed background on mobile */
+    }
+
+    .background-fixed {
+        display: block; /* Show the div on mobile */
+    }
+
+    .hero {
+        background: none; /* Remove background from hero */
+    }
 	.hero__items {
 		position: relative;
 		top: -200px;
