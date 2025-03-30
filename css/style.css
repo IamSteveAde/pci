@@ -455,9 +455,9 @@ ol {
 }
 @media (max-width: 768px) {
 	.hero{
-		height: 120%;
+		height: 80%;
 		text-align: center;
-		background-repeat: no-repeat;
+		
 		background-size: contain;
 		background-image: url(/img/hero/logos\ \(1\).jpg);
 		background-attachment: fixed;
@@ -688,6 +688,7 @@ ol {
 		flex: 0 0 50vw;
 		max-width: 50vw;
 		margin-bottom: 200px;
+		left: 5px;
 	}
 	.unique-btn{
 		width: 150px;
@@ -699,6 +700,7 @@ ol {
 	.unique-carousel-item {
 		flex: 0 0 90vw;
 		max-width: 90vw;
+		left: 5px;
 	}
 }
 
