@@ -1285,6 +1285,11 @@ ol {
 .testimonial__client__item .testimonial__client__pic img {
 	border-radius: 50%;
 }
+.testimonial{
+	width: 100%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
 
 .testimonial__client__item .testimonial__client__text {
 	display: none;
