@@ -132,6 +132,7 @@ ol {
 	
 }
 
+
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -155,6 +156,7 @@ ol {
 .text-white a {
 	color: #fff;
 }
+
 
 /* buttons */
 
@@ -323,6 +325,7 @@ ol {
 
 .header__menu {
 	text-align: center;
+	width: 100%;
 }
 
 .header__menu ul li {
@@ -358,7 +361,7 @@ ol {
 	position: absolute;
 	left: 0;
 	top: 62px;
-	width: 140px;
+	width: 200px;
 	background: #ffffff;
 	text-align: left;
 	padding: 5px 0;
@@ -402,7 +405,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #dfa667;
+	background: #6685c2;
 	content: "";
 	-webkit-transition: all, 0.4s;
 	-o-transition: all, 0.4s;
@@ -436,10 +439,54 @@ ol {
 .canvas__open {
 	display: none;
 }
+.offcanvas-menu-wrapper {
+    overflow-y: auto; /* Enables scrolling but hides scrollbar */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
+}
+
+.offcanvas-menu-wrapper::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari */
+}
+.offcanvas-menu-wrapper ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.offcanvas-menu-wrapper ul li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none; /* Removes underline */
+    display: block; /* Makes the entire area clickable */
+    padding: 10px 15px; /* Adds spacing for better touch interaction */
+    border-radius: 5px; /* Smooth rounded edges */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.offcanvas-menu-wrapper ul li {
+    padding-bottom: 10px;
+}
+
+/* Hover effect */
+.offcanvas-menu-wrapper ul li a:hover {
+    color: #6685c2; /* Highlight color */
+    transform: translateX(5px); /* Adds subtle movement */
+    background: rgba(255, 255, 255, 0.1); /* Adds a light background effect */
+}
+
+/* Active Link Style */
+.offcanvas-menu-wrapper ul li.active a {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.15);
+    color: #6685c2;
+}
+
 
 /*---------------------
   Hero
 -----------------------*/
+
 
 .hero {
     position: relative;
@@ -476,6 +523,10 @@ ol {
 		
 		background-attachment: fixed;
 	}
+	.header__logo{
+		margin-left: -10px;
+	}
+	
 	body {
         background: none; /* Remove fixed background on mobile */
     }

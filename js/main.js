@@ -46,6 +46,23 @@
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const dropdown = document.querySelector(".has-dropdown");
+    
+        // Toggle Mobile Menu
+        hamburger.addEventListener("click", function () {
+            mobileMenu.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    
+        // Toggle Dropdown
+        dropdown.addEventListener("click", function () {
+            this.classList.toggle("active");
+        });
+    });
+    
 
     /*-----------------------
         Hero Slider
