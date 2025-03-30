@@ -453,6 +453,19 @@ ol {
     justify-content: center;
 	background-image: url(/img/hero/logos\ \(1\).jpg);
 }
+@media (max-width: 768px) {
+	.hero{
+		height: 100%;
+		text-align: center;
+	}
+	.hero__items {
+		position: relative;
+		top: -200px;
+	}
+	.hero__text h2{
+		font-size: 2px;
+	}
+}
 .about{
 	background-image: url(/img/Background\ Landscape.jpg);
 	background-size: contain;
