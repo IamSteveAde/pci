@@ -731,6 +731,10 @@ ol {
 		margin-bottom: 200px;
 		
 	}
+	.unique-carousel-item img {
+		
+		box-shadow: 5px 5px white;
+	}
 	.testimonial{
 		
 		background-color: white;
