@@ -730,6 +730,10 @@ ol {
 		margin-bottom: 200px;
 		
 	}
+	.testimonial{
+		
+		background-color: white;
+	}
 	
 	.unique-btn{
 		width: 150px;
@@ -1332,7 +1336,7 @@ ol {
 	width: 100%;
 	box-sizing: border-box;
 	overflow-x: hidden;
-	background: white;
+	background-color: white;
 }
 
 .testimonial__client__item .testimonial__client__text {
