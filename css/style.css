@@ -711,6 +711,12 @@ ol {
 	font-size: 18px;
 	z-index: 0;
 	width: 150%;
+	justify-content: center;
+	align-self: center;
+	justify-self: center;
+	left: 45%;
+	
+	position: relative;
 }
 
 .unique-btn:hover {
@@ -1779,8 +1785,8 @@ ol {
 
 .footer__top__text h2 {
 	color: #ffffff;
-	font-size: 38px;
-	text-transform: uppercase;
+	font-size: 30px;
+	
 }
 
 .footer__top__newslatter form {
@@ -2035,7 +2041,8 @@ ol {
 
 .about__para__text p {
 	margin-bottom: 26px;
-	text-align: justify;
+	text-align: left;
+	color: rgb(222, 222, 222);
 }
 
 .about__para__text p:last-child {
@@ -2076,6 +2083,7 @@ ol {
     justify-content: center;
     text-align: center;
     width: 100%;
+	margin-top: 60px;
     padding: 40px 0;
     gap: 20px;
 	position: relative;
@@ -2101,7 +2109,7 @@ ol {
     text-align: center;
     border-radius: 12px;
     padding: 30px;
-    font-size: 1rem;
+    
     background-size: cover;
     background-position: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -2113,6 +2121,7 @@ ol {
 	
 	font-family: sans-serif;
 }
+
 .right {
     background-image: url('/img/bacl\ \(1\).png'); /* Change to your image */
 	
@@ -2125,27 +2134,34 @@ ol {
 
 /* Center Text & Button */
 .content {
-    position: absolute;
+    position: relative;
     text-align: center;
     z-index: 10;
+	
 }
 
-.content h1 {
+.content h2 {
     color: black;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+	font-weight: 600;
 }
 
 .btn {
     display: inline-block;
-    background: #070f21;
-    color: white;
+    background: transparent;
+	border: 1px solid #070f21;
+    color: #070f21;
+	
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     transition: background 0.3s ease-in-out;
-	margin-top: 30px;
+	
+}
+.content .btn :hover{
+	background-color: #070f21;
 }
 
 
@@ -3728,6 +3744,6 @@ ol {
 		line-height: 45px;
 	}
 	.footer__top__text h2 {
-		font-size: 32px;
+		font-size: 20px;
 	}
 }
