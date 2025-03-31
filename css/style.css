@@ -696,7 +696,7 @@ ol {
 	font-size: 28px;
 	font-weight: bold;
 	color: white;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .unique-btn {
@@ -714,7 +714,7 @@ ol {
 	justify-content: center;
 	align-self: center;
 	justify-self: center;
-	left: 45%;
+	
 	
 	position: relative;
 }
