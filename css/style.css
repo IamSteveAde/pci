@@ -34,7 +34,7 @@
 html,
 body {
 	height: 100%;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -325,7 +325,8 @@ ol {
 
 .header__menu {
 	text-align: center;
-	width: 100%;
+	width: 140%;
+	
 }
 
 .header__menu ul li {
@@ -558,6 +559,14 @@ ol {
 	color: white;
 	background-attachment: fixed;
 	
+}
+.abouts{
+	background-image: url(/img/Background\ Landscape.jpg);
+	background-size: contain;
+	color: white;
+	background-attachment: fixed;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 
@@ -3747,3 +3756,61 @@ ol {
 		font-size: 20px;
 	}
 }
+
+
+
+
+.container1{
+	text-align: center;
+	margin-left: 25%;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.tofu-elevator {
+	margin-top: 100px;
+	color: #ffffff;
+	text-align: center;
+	padding: 100px 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 50px;
+  }
+
+  .grape-owl {
+	font-size: 36px;
+	font-weight: 800;
+	margin-bottom: 15px;
+	width: 100%;
+  }
+
+  .banana-lighthouse {
+	font-size: 20px;
+	color: #BBBBBB;
+	margin-bottom: 40px;
+  }
+
+  .cactus-trampoline {
+	background-color: transparent;
+	color: #6685c2;
+	padding: 15px 35px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #6685c2;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+
+  .cactus-trampoline:hover {
+	background-color: white;
+	color: #070f21;
+  }
+  @media screen and (max-width: 768px) {
+	.container1 {
+	  width: 90%;
+	  padding: 0 10px;
+	  margin-left: 30px;
+	}
+  
+	
+  }
