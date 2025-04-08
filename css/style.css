@@ -3809,8 +3809,32 @@ ol {
 	.container1 {
 	  width: 90%;
 	  padding: 0 10px;
-	  margin-left: 30px;
+	  margin-left: 20px;
 	}
   
 	
   }
+  .rainbow-glow {
+	background: linear-gradient(
+	  270deg,
+	  #ff6b6b,
+	  #f8e71c,
+	  #7ed6df,
+	  #a29bfe,
+	  #ff6b6b
+	);
+	background-size: 1000% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: flowingColors 6s linear infinite;
+  }
+  
+  @keyframes flowingColors {
+	0% {
+	  background-position: 0% 50%;
+	}
+	100% {
+	  background-position: 100% 50%;
+	}
+  }
+  
