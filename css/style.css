@@ -644,9 +644,10 @@ ol {
 		height: 30vh;
 	}
 	#cat{
-		background-size: contain;
-		background-image: url(/img/hero/logos\ \(2\).webp);
+		
+		
 		width: 100%;
+		background-image: url(/img/hero/logos\ \(2\).webp);
 		height: 110vh;
 	}
 	.video-container {
