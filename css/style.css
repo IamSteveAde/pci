@@ -643,7 +643,7 @@ ol {
 	.video-section{
 		height: 30vh;
 	}
-	.abouts{
+	#cat{
 		background-size: contain;
 		background-image: url(/img/hero/logos\ \(2\).webp);
 		width: 100%;
