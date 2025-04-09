@@ -643,12 +643,13 @@ ol {
 	.video-section{
 		height: 30vh;
 	}
-	#cat{
-		background-size: auto;
-		
-		width: 100%;
+	.abouts{
+		background-size: cover;
 		background-image: url(/img/hero/logos\ \(2\).webp);
-		height: 110vh;
+		
+		background-color: #000; /* visible background in case image doesn't fill */
+		width: 100%;
+		height: 100vh;
 	}
 	.video-container {
 		width: 90%;
