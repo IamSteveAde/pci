@@ -643,6 +643,9 @@ ol {
 	.video-section{
 		height: 30vh;
 	}
+	.abouts{
+		background-size: contain;
+	}
 	.video-container {
 		width: 90%;
 	}
