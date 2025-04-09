@@ -3835,6 +3835,11 @@ ol {
 		text-align: left;
 		margin-left: 40px;
 	}
+	.footer__logo img{
+		width: 150px;
+		margin-top: 100px;
+		margin-left: -10px;
+	}
 	
 	
   }
