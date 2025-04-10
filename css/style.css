@@ -644,13 +644,17 @@ ol {
 		height: 30vh;
 	}
 	.abouts{
-		background-size: cover;
+		background-size: contain;
 		background-image: url(/img/hero/logos\ \(2\).webp);
-		
+		background-position: center top;
 		background-color: #000; /* visible background in case image doesn't fill */
+		background-attachment:scroll;
+
 		
 	}
-	
+	.unique-latest-section{
+		margin-top: -100px;
+	}
 	.video-container {
 		width: 90%;
 	}
