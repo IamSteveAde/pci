@@ -3844,12 +3844,23 @@ ol {
 	}
 	#qwep{
 		margin-left: 40px;
+		
 	}
 	.buy{
 		width: 80%;
 		text-align: left;
-		margin-left: 40px;
+		margin-left: 10px;
+		font-size: 2px;
 	}
+	#buys{
+		margin-left: 1210px;
+		font-size: 2px;
+	}
+	.whens{
+		width: 100vh;
+		height: 5vh;
+	}
+	
 	.footer__logo img{
 		width: 150px;
 		margin-top: 100px;
@@ -3893,6 +3904,13 @@ ol {
 	margin-top: -20px;
 	color: #6685c2;
 
+  }
+  #qwep{
+	border: solid 1px #6685c2;
+	padding: 30px 30px 30px 30px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: #b5caf3 1px 1px 1px 1px;
   }
   .tem p{
 	line-height: 35px;

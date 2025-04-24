@@ -1,0 +1,235 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .our-team {
+    padding: 80px 20px;
+    text-align: center;
+
+  }
+  
+  .our-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #6685c2;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 350px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    color: #222;
+  }
+  
+  .team-card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 80px;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 40px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.8rem;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  .modal-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  
+  .modal-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  
+  .modal-info h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #111;
+  }
+  
+  .modal-info .role {
+    margin-top: 4px;
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .modal-info p {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #444;
+    font-size: 0.95rem;
+  }
+  
+  .modal-info .socials {
+    margin-top: 15px;
+  }
+  
+  .socials i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #0077ff;
+    cursor: pointer;
+  }
+  
+  .socials i:hover {
+    color: #004c99;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .modal-profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .modal-info {
+      align-items: center;
+    }
+  }
+  .our-people {
+    padding: 100px 20px;
+    
+  }
+  
+  .our-people .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .people-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  
+  .text-block {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .text-block h2 {
+    font-size: 2.8rem;
+    color: #6685c2;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .text-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-block li {
+    font-size: 1.1rem;
+    color: #d1d1d1;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .text-block li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #d1d1d1;
+    font-size: 1.5rem;
+    line-height: 1;
+    top: 2px;
+  }
+  
+  .visual-block {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .visual-block img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease;
+  }
+  
+  .visual-block img:hover {
+    transform: scale(1.03);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .people-content {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+  
+    .text-block h2 {
+      font-size: 2.2rem;
+    }
+  
+    .text-block li {
+      font-size: 1rem;
+    }
+  }
+  
