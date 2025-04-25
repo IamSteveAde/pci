@@ -64,6 +64,32 @@
     });
     
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const counters = document.querySelectorAll('.counter');
+      
+        counters.forEach(counter => {
+          const updateCount = () => {
+            const target = +counter.getAttribute('data-count');
+            const current = +counter.innerText;
+            const increment = target / 100;
+      
+            if (current < target) {
+              counter.innerText = Math.ceil(current + increment);
+              setTimeout(updateCount, 10);
+            } else {
+              counter.innerText = target;
+            }
+          };
+      
+          updateCount();
+        });
+      });
+
+
+
+      
+      
+
     /*-----------------------
         Hero Slider
     ------------------------*/
@@ -249,3 +275,42 @@
 
 })(jQuery);
 
+// Show Pictures Tab
+function showPictures() {
+    // Show pictures and hide videos
+    document.getElementById("pictures-content").style.display = "block";
+    document.getElementById("videos-content").style.display = "none";
+  
+    // Highlight the active tab
+    document.getElementById("pictures-tab").style.backgroundColor = "#357ab7";
+    document.getElementById("videos-tab").style.backgroundColor = "#4a90e2";
+  }
+  
+  // Show Videos Tab
+  function showVideos() {
+    // Show videos and hide pictures
+    document.getElementById("pictures-content").style.display = "none";
+    document.getElementById("videos-content").style.display = "block";
+  
+    // Highlight the active tab
+    document.getElementById("videos-tab").style.backgroundColor = "#357ab7";
+    document.getElementById("pictures-tab").style.backgroundColor = "#4a90e2";
+  }
+  
+  // Open YouTube Video Modal and Load Video
+  function openModal(videoId) {
+    var modal = document.getElementById("videoModal");
+    var modalVideo = document.getElementById("modal-video");
+  
+    // Update the modal with the correct video
+    modalVideo.innerHTML = '<iframe width="100%" height="500" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+    modal.style.display = "flex";
+  }
+  
+  // Close Modal
+  function closeModal() {
+    var modal = document.getElementById("videoModal");
+    modal.style.display = "none";
+    document.getElementById("modal-video").innerHTML = "";
+  }
+  

@@ -1,57 +1,256 @@
 body {
     font-family: 'Segoe UI', sans-serif;
   }
+  .our-people{
+    border: 1px solid #6685c2;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+	align-items: center;
+	min-height: 100vh; /* full screen height */
+    
+  }
+  .title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .title-wrappers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    margin-top: -30px;
+  }
+  .title-wrapperss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto; /* Center the container itself */
+    margin-top: -30px;
+    width: 60%; /* You can adjust this as needed */
+  }
+  .counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+  
+  }
+  
+  .counter-item {
+    text-align: center;
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 30vh;
+    
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(3, 12, 39, 0.6); /* Semi-transparent white */
+  backdrop-filter: blur(170px); /* This adds the blurry effect */
+  box-shadow: 2px 2px 2px 2px #6685c2; /* Light shadow for depth */
+  transition: all 0.3s ease;
+  margin-bottom: 60px;
+  }
+  
+  .counter {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #4a90e2;
+    margin-bottom: 10px;
+  }
+  
+  .counter-item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+  }
+  
+  .title-wrapperss p{
+    text-align: center;
+  }
+  .title-wrapper h5{
+    margin-top: 50px;
+  }
+  .ask{
+    color: #6685c2;
+  }
+  
+  .fancy-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: #6685c2;
+    padding: 10px 20px;
+    border-left: 1px solid #6685c2;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .fancy-title::before,
+  .fancy-title::after {
+    content: '';
+    position: absolute;
+    background-color: #6685c2;
+    transition: all 0.4s ease;
+  }
+  
+  /* Bottom border (hidden by default) */
+  .fancy-title::before {
+    height: 3px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* Right border (optional, for smooth flow) */
+  .fancy-title::after {
+    height: 0%;
+    width: 3px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /* Hover effect: animate bottom and right border */
+  .fancy-title:hover::before {
+    width: 100%;
+  }
+  
+  .fancy-title:hover::after {
+    height: 100%;
+  }
+  
+  .visual-block img{
+    height: 80vh;
+    width: 100vh;
+  }
+  .allofus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
   
   .our-team {
-    padding: 80px 20px;
+    
     text-align: center;
 
   }
   
-  .our-team h2 {
-    font-size: 2.5rem;
+  .text-block h4 {
+ 
     margin-bottom: 40px;
     color: #6685c2;
   }
-  
-  .team-members {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+  .text-block{
+    text-align: justify;
+    color: #666;
+  }
+  .text-block p{
+    text-align: justify;
+    color: #b5b5b5;
+  }
+  /* Overall Section */
+.our-team {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 60px;
   }
   
+  .our-team h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6685c2;
+    margin-bottom: 40px;
+  }
+  
+  /* Team Members Grid */
+  .team-members {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Team Card */
   .team-card {
-    background: white;
-    border-radius: 16px;
-    padding: 30px 20px;
-    width: 350px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.07);
-    transition: all 0.3s ease;
+    width: 300px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #6685c2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
     cursor: pointer;
   }
   
-  .team-card:hover {
-    transform: translateY(-5px);
+  /* Image Styles */
+  .team-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
   }
   
-  .team-card img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
+  /* Team Member Name */
   .team-card h3 {
-    font-size: 1.1rem;
-    margin: 10px 0 5px;
-    color: #222;
+    font-size: 22px;
+    font-weight: bold;
+    color: #6685c2;
+    margin: 20px 0;
+    transition: color 0.3s ease;
   }
   
+  /* Role Description */
   .team-card p {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
   }
+  
+  /* Social Media Icons */
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #4a90e2; /* Highlight color */
+    transform: translateY(-5px); /* Slightly lift the icon */
+  }
+  
+  /* Hover Effect on Team Cards */
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-card:hover .team-image {
+    transform: scale(1.05); /* Slightly zoom the image */
+  }
+  
+  .team-card:hover h3 {
+    color: #4a90e2; /* Change name color on hover */
+  }
+  
   
   /* Modal Styles */
   .modal {
@@ -140,6 +339,37 @@ body {
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+    .ask{
+      color: #6685c2;
+      font-size: 28px;
+      
+    }
+    #ask{
+      color: #6685c2;
+      font-size: 28px;
+      margin-top: 100px;
+    }
+    .counter-container {
+      display: grid;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+     
+      margin-top: 50px;
+      width: 100%;
+    
+    }
+    .title-wrapperss{
+      width: 80%;
+    }
+   
+    .our-team h2{
+      font-size: 28px;
+    }
+    .counter-item{
+      width: 30vh;
+      margin-bottom: -5px;
     }
   
     .modal-info {
@@ -230,6 +460,94 @@ body {
   
     .text-block li {
       font-size: 1rem;
+    }
+  }
+
+  /* Join Our Team Section */
+.join-our-team {
+    padding: 50px 20px;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #6685c2;
+    width: 80%;
+    margin-bottom: 60px;
+  }
+  
+  .join-our-team .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .join-our-team .text {
+    width: 50%;
+    padding: 20px;
+    text-align: left; /* Left-align the text */
+  }
+  
+  .join-our-team h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6685c2;
+    margin-bottom: 20px;
+  }
+  
+  .join-our-team p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #6685c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .opa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  
+  .cta-button:hover {
+    background-color: #357ab7;
+  }
+  
+  .join-our-team .image {
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    overflow-y: hidden;
+  }
+  
+  .join-our-team .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .join-our-team .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .join-our-team .text {
+      width: 90%;
+      text-align: left; /* Ensures the text is left-aligned on mobile as well */
+    }
+  
+    .join-our-team .image {
+      width: 100%;
+      margin-top: 20px;
     }
   }
   

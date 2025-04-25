@@ -704,12 +704,30 @@ ol {
 	background-attachment: fixed;
 	width: 100%;
 	overflow-x: hidden;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 2 columns */
+	
+	justify-content: space-between; /* optional: spaces items nicely */
+	gap: 0px; /* optional: spacing between items */
+
+}
+.unique-latest-sections {
+	padding: 50px 0;
+	background-image: url(/img/Background\ Landscape.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	width: 100%;
+	overflow-x: hidden;
+	
+	
+	  
 }
 
 .unique-container {
 	width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
+
 	
 }
 
@@ -817,6 +835,7 @@ ol {
 		margin-bottom: 200px;
 		
 	}
+	
 	.unique-carousel-item img {
 		
 		box-shadow: 5px 5px white;
@@ -2350,6 +2369,11 @@ ol {
 	.tem{
 		margin-left: 20px;
 	}
+	#qwep{
+		width: 30%;
+		margin-left: 40px;
+		line-height: 20px;
+	  }
   
 
     .counter__item {
@@ -3842,6 +3866,21 @@ ol {
 	  padding: 0 10px;
 	  margin-left: 20px;
 	}
+	.unique-latest-section {
+		padding: 50px 0;
+		background-image: url(/img/Background\ Landscape.jpg);
+		background-size: contain;
+		background-attachment: fixed;
+		width: 100%;
+		overflow-x: hidden;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr); /* 2 columns */
+		
+		justify-content: space-between; /* optional: spaces items nicely */
+		gap: 0px; /* optional: spacing between items */
+	
+	}
+	
 	#qwep{
 		margin-left: 40px;
 		
@@ -3896,7 +3935,7 @@ ol {
   }
   .tem{
 	width: 80%;
-	margin-left: 120px;
+	margin-left: 40px;
 	line-height: 20px;
   }
   .tem h4{
