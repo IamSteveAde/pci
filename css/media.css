@@ -122,6 +122,18 @@
       width: 90%;
       
     }
+    .video-modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 25%;
+      top: 10%;
+      width: 50%;
+      
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
     .media-item img{
       height: 35vh;
     }

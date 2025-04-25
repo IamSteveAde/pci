@@ -342,13 +342,18 @@ body {
     }
     .ask{
       color: #6685c2;
-      font-size: 28px;
+      font-size: 20px;
       
     }
     #ask{
       color: #6685c2;
-      font-size: 28px;
+      font-size: 20px;
       margin-top: 100px;
+    }
+    .counter-item {
+      padding-top: 10px;
+      padding-bottom: 100px;
+      height: 20vh;
     }
     .counter-container {
       display: grid;
@@ -548,6 +553,9 @@ body {
     .join-our-team .image {
       width: 100%;
       margin-top: 20px;
+    }
+    .content{
+      width: 100%;
     }
   }
   
