@@ -414,7 +414,7 @@
       font-size: 1px;
     }
     .who-we-are-text{
-      margin-top: -25vh;
+      margin-top: -15vh;
       padding-left: 20px;
       padding-right: 20px;
       text-align: justify;
@@ -424,6 +424,15 @@
       text-align: left;
       width: 100%;
   }
+  .step-number {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6685c2;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
   .strategy-step {
     display: flex;
     align-items: center;
