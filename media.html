@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/team.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
     <script src="//code.jivosite.com/widget/tBvntzoIhA" async></script>
 
 </head>
@@ -185,162 +185,125 @@
     <!-- Latest Section Begin -->
     <section class="unique-latest-sections">
         <div class="unique-container">
-            <div class="title-wrapper">
-                <h5>Our People</h5>
-                
-              </div>
-
-              <div class="title-wrappers">
-                <h2 class="ask">Our greatest differential value</h2>
-                
-              </div>
-              <div class="title-wrapperss">
-                <p>
-                    We are a team of passionate and experienced professionals from diverse backgrounds,
-                    collectively harnessing our expertise to enhance the companies we advise and invest in.
-                  </p>
-                
-                
-              </div>
-              <div class="counter-container">
-                <div class="counter-item">
-                  <span class="counter" data-count="104">0</span>
-                  <p>DIRECT PORTFOLIO<br>COMPANIES</p>
+            <section class="media-section">
+                <!-- Tabs for Pictures and Videos -->
+                <div class="media-tabs" style="margin-top: 100px;">
+                  <button class="tab-button" id="pictures-tab" onclick="showPictures()">Pictures</button>
+                  <button class="tab-button" id="videos-tab" onclick="showVideos()">Videos</button>
                 </div>
-                <div class="counter-item">
-                  <span class="counter" data-count="9">0</span>
-                  <p>VERTICALS</p>
-                </div>
-                <div class="counter-item">
-                  <span class="counter" data-count="20">0</span>
-                  <p>Diverse TEAM</p>
-                </div>
-                <div class="counter-item">
-                  <span class="counter" data-count="11">0</span>
-                  <p>NATIONALITIES</p>
-                </div>
-              </div>
-              <div class="title-wrappers">
-                
-                <h2 class="ask" id="ask">Promoting inclusive workspaces</h2>
-                
-              </div>
-              <div class="title-wrapperss">
-                <p>
-                    Everyone at Platform Capital has just one job – to make our investee businesses, clients,
-                    and partners successful — success as defined by our partners, clients, and the promoters of
-                    the investee businesses. We are driven to exceed the expectations of our stakeholders.
-                  </p>
-                  
-                
-                
-              </div>
               
+                <!-- Pictures Tab Content -->
+                <div class="media-content pictures" id="pictures-content">
+                  <div class="media-container">
+                    <div class="media-item">
+                      <img src="./img/about-pic.jpg" alt="Picture 1" />
+                      <div class="media-info">
+                        <h5>Picture 1 Title</h5>
+                        <p>Description of the picture goes here.</p>
+                      </div>
+                    </div>
+                    <div class="media-item">
+                      <img src="./img/about-pic.jpg" alt="Picture 2" />
+                      <div class="media-info">
+                        <h5>Picture 2 Title</h5>
+                        <p>Description of the picture goes here.</p>
+                      </div>
+                    </div>
+                    <div class="media-item">
+                      <img src="./img/about-pic.jpg" alt="Picture 3" />
+                      <div class="media-info">
+                        <h5>Picture 3 Title</h5>
+                        <p>Description of the picture goes here.</p>
+                      </div>
+                    </div>
+                    <div class="media-item">
+                        <img src="./img/about-pic.jpg" alt="Picture 1" />
+                        <div class="media-info">
+                          <h5>Picture 1 Title</h5>
+                          <p>Description of the picture goes here.</p>
+                        </div>
+                      </div>
+                      <div class="media-item">
+                        <img src="./img/about-pic.jpg" alt="Picture 2" />
+                        <div class="media-info">
+                          <h5>Picture 2 Title</h5>
+                          <p>Description of the picture goes here.</p>
+                        </div>
+                      </div>
+                      <div class="media-item">
+                        <img src="./img/about-pic.jpg" alt="Picture 3" />
+                        <div class="media-info">
+                          <h5>Picture 3 Title</h5>
+                          <p>Description of the picture goes here.</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              
+                <!-- Videos Tab Content -->
+                <div class="media-content videos" id="videos-content" style="display:none;">
+                  <div class="media-container">
+                    <div class="media-item">
+                      <img src="./img/project/project-4.jpg" alt="Video 1 Thumbnail" class="video-thumbnail" onclick="openModal('xobBwKT0hzk')" />
+                      <div class="media-info">
+                        <h5>Video 1 Title</h5>
+                        <p>Video description goes here.</p>
+                      </div>
+                    </div>
+                    <div class="media-item">
+                      <img src="./img/project/project-4.jpg" alt="Video 2 Thumbnail" class="video-thumbnail" onclick="openModal('iou6J7lHWpU')" />
+                      <div class="media-info">
+                        <h5>Video 2 Title</h5>
+                        <p>Video description goes here.</p>
+                      </div>
+                    </div>
+                    <div class="media-item">
+                      <img src="./img/project/project-4.jpg" alt="Video 3 Thumbnail" class="video-thumbnail" onclick="openModal('GEgDu2mEusA')" />
+                      <div class="media-info">
+                        <h5>Video 3 Title</h5>
+                        <p>Video description goes here.</p>
+                      </div>
+                    </div>
+                    <div class="media-item">
+                        <img src="./img/project/project-2.jpg" alt="Video 1 Thumbnail" class="video-thumbnail" onclick="openModal('xobBwKT0hzk')" />
+                        <div class="media-info">
+                          <h5>Video 1 Title</h5>
+                          <p>Video description goes here.</p>
+                        </div>
+                      </div>
+                      <div class="media-item">
+                        <img src="./img/project/project-1.jpg" alt="Video 2 Thumbnail" class="video-thumbnail" onclick="openModal('iou6J7lHWpU')" />
+                        <div class="media-info">
+                          <h5>Video 2 Title</h5>
+                          <p>Video description goes here.</p>
+                        </div>
+                      </div>
+                      <div class="media-item">
+                        <img src="./img/project/project-3.jpg" alt="Video 3 Thumbnail" class="video-thumbnail" onclick="openModal('GEgDu2mEusA')" />
+                        <div class="media-info">
+                          <h5>Video 3 Title</h5>
+                          <p>Video description goes here.</p>
+                        </div>
+                      </div>
+                    
+                  </div>
+                </div>
+              
+                <!-- Modal for YouTube Videos -->
+                <div id="videoModal" class="video-modal">
+                  <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <div id="modal-video"></div>
+                  </div>
+                </div>
+              </section>
+              
+            
          
-x              
+              
             
         </div>
-        <section class="our-team">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-              <!-- Team Member 1 -->
-              <div class="team-card" onclick="openModal('modal1')">
-                <img src="https://i.pravatar.cc/150?img=1" alt="Jane Doe">
-                <h3>Jane Doe</h3>
-                <p>Chief Executive Officer</p>
-              </div>
-          
-              <!-- Team Member 2 -->
-              <div class="team-card" onclick="openModal('modal2')">
-                <img src="https://i.pravatar.cc/150?img=11" alt="Michael Smith">
-                <h3>Michael Smith</h3>
-                <p>Managing Partner</p>
-              </div>
-          
-              <!-- Team Member 3 -->
-              <div class="team-card" onclick="openModal('modal3')">
-                <img src="https://i.pravatar.cc/150?img=20" alt="Amina Yusuf">
-                <h3>Amina Yusuf</h3>
-                <p>Director of Investments</p>
-              </div>
-            </div>
-          </section>
-          
-          <!-- Modal Template -->
-          <div id="modal1" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal('modal1')">&times;</span>
-              <div class="modal-profile">
-                <img src="https://i.pravatar.cc/150?img=1" alt="Jane Doe">
-                <div class="modal-info">
-                  <h3>Jane Doe</h3>
-                  <p class="role">Chief Executive Officer</p>
-                  <p>Jane leads Platform Capital’s global strategy. With over 15 years of experience in growth market investments, she has built and exited multiple portfolio companies and actively mentors female founders across Africa.</p>
-                  <div class="socials">
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div id="modal2" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal('modal2')">&times;</span>
-              <div class="modal-profile">
-                <img src="https://i.pravatar.cc/150?img=11" alt="Michael Smith">
-                <div class="modal-info">
-                  <h3>Michael Smith</h3>
-                  <p class="role">Managing Partner</p>
-                  <p>Michael brings a wealth of knowledge in capital markets and private equity. He has advised Fortune 500 companies and brings sharp business judgment and strategic oversight to Platform Capital’s investments.</p>
-                  <div class="socials">
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div id="modal3" class="modal">
-            <div class="modal-content">
-              <span class="close" onclick="closeModal('modal3')">&times;</span>
-              <div class="modal-profile">
-                <img src="https://i.pravatar.cc/150?img=20" alt="Amina Yusuf">
-                <div class="modal-info">
-                  <h3>Amina Yusuf</h3>
-                  <p class="role">Director of Investments</p>
-                  <p>Amina is an investment strategist with deep expertise in portfolio scaling. She oversees due diligence, post-investment growth and impact initiatives. Her background in fintech fuels her data-driven decision-making.</p>
-                  <div class="socials">
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-
-
-         <section class="opa">     
-          <section class="join-our-team">
-            <div class="content">
-              <div class="text">
-                <h2>Join Our Team</h2>
-                <p>We are always looking for talented individuals to join our amazing team. If you have a passion for growth, innovation, and success, we’d love to hear from you!</p>
-                <button class="cta-button">Apply Now</button>
-              </div>
-              <div class="image">
-                <img src="./img/project/project-3.jpg" alt="Join Our Team">
-              </div>
-            </div>
-          </section>  
-        </section>    
-          
+        
           
     </section><!-- Latest Section End -->
    
@@ -532,7 +495,62 @@ x
     }
     </script>
     
-
+    <script>
+        function openModal(videoUrl) {
+          const modal = document.getElementById("videoModal");
+          const iframe = document.getElementById("videoFrame");
+          iframe.src = videoUrl;
+          modal.style.display = "block";
+        }
+      
+        function closeModal() {
+          const modal = document.getElementById("videoModal");
+          const iframe = document.getElementById("videoFrame");
+          iframe.src = "";
+          modal.style.display = "none";
+        }
+      
+        // Optional: click outside the modal to close
+        window.onclick = function(event) {
+          const modal = document.getElementById("videoModal");
+          if (event.target === modal) {
+            closeModal();
+          }
+        };
+      </script>
+      <script>
+        function openModal(videoId) {
+          const modal = document.getElementById("videoModal");
+          const modalVideo = document.getElementById("modal-video");
+      
+          // Create the YouTube embed iframe
+          modalVideo.innerHTML = `
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+              frameborder="0" allowfullscreen allow="autoplay">
+            </iframe>
+          `;
+      
+          modal.style.display = "block";
+        }
+      
+        function closeModal() {
+          const modal = document.getElementById("videoModal");
+          const modalVideo = document.getElementById("modal-video");
+      
+          modal.style.display = "none";
+          modalVideo.innerHTML = ""; // Clear the iframe to stop video
+        }
+      
+        // Optional: close modal when clicking outside
+        window.onclick = function (event) {
+          const modal = document.getElementById("videoModal");
+          if (event.target === modal) {
+            closeModal();
+          }
+        };
+      </script>
+      
+      
 
 
 
