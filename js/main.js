@@ -313,4 +313,184 @@ function showPictures() {
     modal.style.display = "none";
     document.getElementById("modal-video").innerHTML = "";
   }
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-lemon');
+    const statusFilter = document.getElementById('status-cherry');
+    const solutionFilter = document.getElementById('solution-banana');
+    const regionFilter = document.getElementById('region-avocado');
+    const cards = document.querySelectorAll('.card-unicorn');
+    const noResults = document.getElementById('no-results-snake');
+  
+    function filterCompanies() {
+      const searchText = searchInput.value.toLowerCase();
+      const statusValue = statusFilter.value.toLowerCase();
+      const solutionValue = solutionFilter.value.toLowerCase();
+      const regionValue = regionFilter.value.toLowerCase();
+  
+      let visibleCount = 0;
+  
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const status = card.dataset.status.toLowerCase();
+        const solution = card.dataset.solution.toLowerCase();
+        const region = card.dataset.region.toLowerCase();
+  
+        const matchesSearch = name.includes(searchText);
+        const matchesStatus = statusValue === 'all' || status === statusValue;
+        const matchesSolution = solutionValue === 'all' || solution === solutionValue;
+        const matchesRegion = regionValue === 'all' || region === regionValue;
+  
+        if (matchesSearch && matchesStatus && matchesSolution && matchesRegion) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+  
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden-snake');
+      } else {
+        noResults.classList.add('hidden-snake');
+      }
+    }
+  
+    searchInput.addEventListener('input', filterCompanies);
+    statusFilter.addEventListener('change', filterCompanies);
+    solutionFilter.addEventListener('change', filterCompanies);
+    regionFilter.addEventListener('change', filterCompanies);
+  });
+  const toggleButtons = document.querySelectorAll('.toggle-parrot');
+
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const description = button.parentElement.nextElementSibling;
+  
+      if (description.style.display === 'block') {
+        description.style.display = 'none';
+        button.innerHTML = 'Details ▼';
+      } else {
+        description.style.display = 'block';
+        button.innerHTML = 'Hide ▲';
+      }
+    });
+  });
+      
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-lemon');
+    const statusFilter = document.getElementById('status-cherry');
+    const solutionFilter = document.getElementById('solution-banana');
+    const regionFilter = document.getElementById('region-avocado');
+    const cards = document.querySelectorAll('.card-unicorn');
+    const noResults = document.getElementById('no-results-snake');
+  
+    // Modal Elements
+    const modal = document.getElementById('modal-profile');
+    const closeModalBtn = document.getElementById('close-modal');
+    const companyNameElement = document.getElementById('company-name');
+    const companyLogoElement = document.getElementById('company-logo');
+    const companyDescriptionElement = document.getElementById('company-description');
+  
+    // Open Modal and Populate Data
+    function openModal(card) {
+      const companyName = card.dataset.name;
+      const companyLogo = card.querySelector('img').src;
+      const companyDescription = card.querySelector('.company-description').innerHTML;
+  
+      companyNameElement.textContent = companyName;
+      companyLogoElement.src = companyLogo;
+      companyDescriptionElement.innerHTML = companyDescription;
+  
+      modal.classList.add('active-falcon');
+    }
+  
+    // Close Modal
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.remove('active-falcon');
+    });
+  
+    // Filter Companies based on Input
+    function filterCompanies() {
+      const searchText = searchInput.value.toLowerCase();
+      const statusValue = statusFilter.value.toLowerCase();
+      const solutionValue = solutionFilter.value.toLowerCase();
+      const regionValue = regionFilter.value.toLowerCase();
+  
+      let visibleCount = 0;
+  
+      cards.forEach(card => {
+        const name = card.dataset.name.toLowerCase();
+        const status = card.dataset.status.toLowerCase();
+        const solution = card.dataset.solution.toLowerCase();
+        const region = card.dataset.region.toLowerCase();
+  
+        const matchesSearch = name.includes(searchText);
+        const matchesStatus = statusValue === 'all' || status === statusValue;
+        const matchesSolution = solutionValue === 'all' || solution === solutionValue;
+        const matchesRegion = regionValue === 'all' || region === regionValue;
+  
+        // Show or hide the card based on filter matches
+        if (matchesSearch && matchesStatus && matchesSolution && matchesRegion) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+  
+      // Show or hide 'No Results' message
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden-snake');
+      } else {
+        noResults.classList.add('hidden-snake');
+      }
+    }
+  
+    // Event listeners for inputs and filters
+    searchInput.addEventListener('input', filterCompanies);
+    statusFilter.addEventListener('change', filterCompanies);
+    solutionFilter.addEventListener('change', filterCompanies);
+    regionFilter.addEventListener('change', filterCompanies);
+  
+    // Event listener for the toggle button
+    cards.forEach(card => {
+      const toggleButton = card.querySelector('.toggle-parrot');
+      toggleButton.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default action
+        openModal(card); // Open the modal with the card's data
+      });
+    });
+  });
+
+  // Form submission
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value.trim();
+      const reason = document.getElementById('reason').value.trim();
+      const message = document.getElementById('message').value.trim();
+  
+      if (!name || !reason || !message) {
+        formMessage.textContent = "Please fill in all fields.";
+        formMessage.style.color = 'red';
+        return;
+      }
+  
+      // Simulate sending an email
+      // In real life, you would connect to a service like Formspree, EmailJS, or your backend
+      console.log("Sending email to adediranstephen2000@gmail.com:");
+      console.log("Name:", name);
+      console.log("Reason:", reason);
+      console.log("Message:", message);
+  
+      formMessage.textContent = "Thank you for contacting us! We will get back to you shortly.";
+      formMessage.style.color = 'green';
+  
+      form.reset();
+    });
+  });
   

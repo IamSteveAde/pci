@@ -1,3 +1,6 @@
+section{
+  overflow-y: hidden;
+}
 .miss{
     width: 80%;
     text-align: center;
@@ -19,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     
 }
 .who-we-are {
@@ -26,6 +30,7 @@
     
     font-family: 'Segoe UI', sans-serif;
     color: #6685c2;
+    overflow-y: hidden;
   }
   
   .section-title {
@@ -43,6 +48,7 @@
     flex-wrap: wrap;
     border: 1px solid #6685c2;
     border-radius: 20px;
+    overflow-y: hidden;
   }
   
   .who-we-are-image img {
@@ -84,6 +90,7 @@
     margin-bottom: 50px;
     text-align: center;
     color: #6685c2;
+    overflow-y: hidden;
   }
   
   .value-grid {

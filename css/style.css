@@ -711,6 +711,16 @@ ol {
 	gap: 0px; /* optional: spacing between items */
 
 }
+.unique-latest-sectiono {
+	padding: 50px 0;
+	background-image: url(/img/Background\ Landscape.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	width: 100%;
+	overflow-x: hidden;
+	
+
+}
 .unique-latest-sections {
 	padding: 50px 0;
 	background-image: url(/img/Background\ Landscape.jpg);
@@ -769,6 +779,9 @@ ol {
 .unique-btn:hover {
 	background: #6685c2;
 	
+}
+.section{
+	overflow-y: hidden;
 }
 
 /* CAROUSEL STYLES */

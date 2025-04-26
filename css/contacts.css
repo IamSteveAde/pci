@@ -1,0 +1,105 @@
+.hero-eagle {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('/img/Vista_Companies_Portfolio_Header.jpg') center/cover no-repeat;
+    color: #fff;
+   
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex; /* enable flexbox */
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+    text-align: center;
+    padding: 0 20px; /* small padding for mobile */
+    position: relative;
+      
+      
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #204080;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #204080;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background-color: #204080;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #163060;
+  }
+  
+  /* Form Message */
+  .form-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+  }
+  
