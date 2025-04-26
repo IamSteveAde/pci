@@ -163,7 +163,7 @@ body {
 .our-team {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    
     margin-bottom: 60px;
   }
   
@@ -187,11 +187,14 @@ body {
     width: 300px;
     padding: 20px;
     border-radius: 4px;
-    background-color: #fff;
+    border: 1px solid #6685c2;
     box-shadow: 2px 2px 2px #6685c2;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     cursor: pointer;
+  }
+  .team-card img{
+    width: 100%;
   }
   
   /* Image Styles */
