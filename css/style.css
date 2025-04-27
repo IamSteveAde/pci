@@ -36,8 +36,11 @@ body {
 	height: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	-webkit-font-smoothing: antialiased;
-}
 
+}
+body{
+	background-image: url(/img/Background\ Landooscape.jpg);
+}
 h1,
 h2,
 h3,
@@ -561,6 +564,7 @@ ol {
 	background-size: contain;
 	color: white;
 	background-attachment: fixed;
+	margin-top: 20px;
 	
 }
 .abouts{
@@ -594,6 +598,7 @@ ol {
     align-items: center; /* Centers content vertically */
     height: 100vh; /* Full height of the viewport */
     background-color: #f8f8f8;
+	
 }
 
 .video-container {
@@ -642,6 +647,7 @@ ol {
 	}
 	.video-section{
 		height: 30vh;
+
 	}
 	.abouts{
 		background-size: cover;
