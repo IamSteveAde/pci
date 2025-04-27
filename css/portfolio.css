@@ -35,9 +35,9 @@
   
   /* Filters */
   .filters-squidward {
-    background-color: #6685c2;
+    
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #6685c2;
   }
   
   .filter-octopus {
@@ -66,8 +66,9 @@
   }
   
   .card-unicorn {
-    background: #fff;
+    
     border: 1px solid #e0e0e0;
+    
     height: 150px;
     display: flex;
     align-items: center;
@@ -126,6 +127,7 @@
 .card-unicorn {
     background: #fff;
     border: 1px solid #e0e0e0;
+    box-shadow: 5px 5px #6685c2;
     height: 150px;
     display: flex;
     align-items: center;

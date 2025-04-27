@@ -1,6 +1,40 @@
 section{
   overflow-y: hidden;
 }
+.hero-eagle {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/img/Vista_About_Header-2000x864.jpg') center/cover no-repeat;
+  color: #fff;
+ 
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex; /* enable flexbox */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center;
+  padding: 0 20px; /* small padding for mobile */
+  position: relative;
+    
+    
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
 .miss{
     width: 80%;
     text-align: center;
@@ -34,7 +68,7 @@ section{
   }
   
   .section-title {
-    font-size: 2.5rem;
+    
     font-weight: bold;
     margin-bottom: 15px;
     text-align: center;
@@ -54,8 +88,15 @@ section{
   .who-we-are-image img {
     width: 450px;
     max-width: 100%;
+    padding-top: 45px;
+    padding-left: 29px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .ikon{
+    border-radius: 50%;
+    width: 70px;
+    padding-bottom: 30px;
   }
   
   .who-we-are-text {
@@ -66,7 +107,7 @@ section{
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-top: 120px;
+    padding-top: 45px;
     
     
   }
@@ -85,7 +126,7 @@ section{
   }
   
   .section-title {
-    font-size: 2.5rem;
+    
     font-weight: bold;
     margin-bottom: 50px;
     text-align: center;
@@ -140,7 +181,7 @@ section{
   }
   
   .section-title {
-    font-size: 2.5rem;
+    
     font-weight: bold;
     margin-bottom: 10px;
     color: #6685c2;
@@ -207,7 +248,7 @@ section{
 
 /* Title Styling */
 .what-we-do .section-title h2 {
-    font-size: 32px;
+    
     font-weight: bold;
     margin-bottom: 30px;
     color: #6685c2;
@@ -285,6 +326,22 @@ section{
 @media (max-width: 768px) {
     .strategy-step {
         width: 90%;
+    }
+    .miss h4{
+      font-size: 1.1rem;
+    }
+    .who-we-are-image img{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .ikon{
+      width: 40px;
+    }
+    .miss h2{
+      font-size: 1.17rem;
+    }
+    .section-title h2{
+      font-size: 1.19rem;
     }
     
 }
@@ -424,7 +481,7 @@ section{
       margin-top: -15vh;
       padding-left: 20px;
       padding-right: 20px;
-      text-align: justify;
+      text-align: left;
     }
     .step-content {
       margin-left: 0px;

@@ -138,3 +138,38 @@
       height: 35vh;
     }
   }
+
+  .hero-eagle {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('/img/Vista_In-the-News_HeaderModule_2000x866-1.jpg') center/cover no-repeat;
+    color: #fff;
+   
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex; /* enable flexbox */
+    align-items: center; /* vertical center */
+    justify-content: center; /* horizontal center */
+    text-align: center;
+    padding: 0 20px; /* small padding for mobile */
+    position: relative;
+      
+      
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
