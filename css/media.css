@@ -41,7 +41,7 @@
     
   }
   .media-item img{
-    box-shadow: 5px 5px #6685c2;
+    box-shadow: 2px 2px white;
   }
   
   .media-item:hover {
@@ -107,7 +107,7 @@
   }
 
   .media-item img{
-    height: 50vh;
+    
   }
   
   @media screen and (max-width: 600px) {
@@ -134,9 +134,7 @@
       justify-content: center;
       align-items: center;
     }
-    .media-item img{
-      height: 35vh;
-    }
+    
   }
 
   .hero-eagle {
