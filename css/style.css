@@ -705,10 +705,12 @@ ol {
 	width: 100%;
 	overflow-x: hidden;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* 2 columns */
+	grid-template-columns: repeat(2, 1fr); /* 2 columns */
+	align-items: stretch; /* VERY IMPORTANT - makes all items same height */
+	
 	
 	justify-content: space-between; /* optional: spaces items nicely */
-	gap: 0px; /* optional: spacing between items */
+	gap: 20px; /* optional: spacing between items */
 
 }
 .unique-latest-sectiono {
@@ -737,6 +739,8 @@ ol {
 	width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
+	height: 100%;
+    display: flex;
 
 	
 }
@@ -3909,22 +3913,25 @@ ol {
 	
 	#qwep{
 		margin-left: 20px;
+		width: 90%;
+		margin-top: 20px;
 		
 	}
+	#port{
+		margin-bottom: 100px;
+	}
 	.buy{
-		width: 80%;
+		width: 100%;
 		text-align: left;
 		margin-left: 10px;
-		font-size: 2px;
+		font-size: 1.08rem;
 	}
 	#buys{
-		margin-left: 1210px;
-		font-size: 2px;
+		width: 100%;
+		
+		
 	}
-	.whens{
-		width: 100vh;
-		height: 5vh;
-	}
+	
 	
 	.footer__logo img{
 		width: 150px;
@@ -3970,15 +3977,21 @@ ol {
 	color: #6685c2;
 
   }
+  .tem h5{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: #6685c2;
+
+  }
   #qwep{
 	border: solid 1px #6685c2;
 	padding: 30px 30px 30px 30px;
 	border-radius: 10px;
 	margin-bottom: 20px;
-	box-shadow: #b5caf3 1px 1px 1px 1px;
+	box-shadow: #b5caf3 5px 5px;
   }
   .tem p{
-	line-height: 35px;
+	line-height: 25px;
   }
   #modal {
 	position: fixed;
@@ -4040,4 +4053,5 @@ ol {
     font-size: 20px;
     line-height: 1.6;
   }
+
   
