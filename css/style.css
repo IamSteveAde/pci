@@ -4070,8 +4070,9 @@ ol {
     line-height: 1.6;
   }
 
-  body{
+  body {
 	overflow-x: hidden;
+	max-width: 100%;
   }
   #popl{
 	padding-top: 20px;
