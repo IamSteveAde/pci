@@ -402,6 +402,10 @@ body {
       width: 100%;
     
     }
+    .unique-latest-sections{
+      overflow-y: hidden;
+
+    }
     .title-wrapperss{
       width: 80%;
     }
