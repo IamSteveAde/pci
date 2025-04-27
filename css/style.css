@@ -3906,6 +3906,11 @@ ol {
 	  padding: 0 10px;
 	  margin-left: 20px;
 	}
+	#popl{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		
+	  }
 	.unique-latest-section {
 		padding: 50px 0;
 		background-image: url(/img/Background\ Landscape.jpg);
@@ -4064,4 +4069,10 @@ ol {
     line-height: 1.6;
   }
 
-  
+  body{
+	overflow-x: hidden;
+  }
+  #popl{
+	padding-top: 20px;
+	padding-bottom: 20px;
+  }
