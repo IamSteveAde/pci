@@ -203,19 +203,36 @@
                     <option value="former">Former</option>
                   </select>
               
-                  <select id="solution-banana">
+                  <!--<select id="solution-banana">
                     <option value="all">Industry</option>
-                    <option value="education">Education</option>
+                    <option value="education">Healthcare</option>
+                    <option value="fintech">Fintech</option>
+                    <option value="biotech">Biotech</option>
+                    <option value="jetvehicle">Jet Vehicle</option>
+                    <option value="vcfund">VC Fund</option>
+                    <option value="fmcg">FMCG</option>
+                    <option value="proptech">Proptech</option>
                     <option value="finance">Finance</option>
                     <option value="healthcare">Healthcare</option>
                     <option value="Oil & Gas">Oil & Gas</option>
+                  </select>-->
+                  <select id="solution-banana">
+                    <option value="all">Business Type</option>
+                    <option value="profit">Profit</option>
+                    <option value="nonprofit">Non-Profit</option>
+                    
                   </select>
               
                   <select id="region-avocado">
                     <option value="all">Region</option>
-                    <option value="Africa">Africa</option>
-                    <option value="europe">Europe</option>
-                    <option value="asia">Asia</option>
+                    <option value="NorthAmerica">North America</option>
+                    <option value="LatinAmerica">Latin America</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="SouthAfrica">South Africa</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="China">China</option>
                   </select>
               
                   <input type="text" id="search-lemon" placeholder="Search Companies">
@@ -225,7 +242,7 @@
               <section class="portfolio-penguin">
                 <div class="wrap-bumblebee grid-dragon" id="portfolio-dragon">
                   <!-- Company Cards -->
-                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="SOLO" data-status="Active" data-solution="Finance" data-region="Africa">
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="SOLO" data-status="Active" data-solution="profit" data-region="NorthAmerica">
                     <img src="./img/logo/1.png" alt="Company Logo" class="card-logo">
                     <button class="toggle-parrot">Details ▼</button>
                     <div class="company-description hidden-snake">
@@ -244,7 +261,7 @@
                   </div>
                   
               
-                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Sanivation" data-status="Active" data-solution="Healthcare" data-region="Africa">
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Sanivation" data-status="Active" data-solution="Profit" data-region="Kenya">
                     <img src="./img/logo/2.png" alt="Company Logo" class="card-logo">
                     <button class="toggle-parrot">Details ▼</button>
                     <div class="company-description hidden-snake">
@@ -261,7 +278,8 @@
                       <p id="company-description"></p>
                     </div>
                   </div>
-                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Koko" data-status="Active" data-solution="Healthcare" data-region="Africa">
+
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Koko" data-status="Active" data-solution="Profit" data-region="Kenya">
                     <img src="./img/logo/3.png" alt="Company Logo" class="card-logo">
                     <button class="toggle-parrot">Details ▼</button>
                     <div class="company-description hidden-snake">
@@ -280,7 +298,7 @@
                   </div>
                   
               
-                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Lipa Later" data-status="Active" data-solution="Finance" data-region="Africa">
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Lipa Later" data-status="Active" data-solution="Profit" data-region="Kenya">
                     <img src="./img/logo/4.png" alt="Company Logo" class="card-logo">
                     <button class="toggle-parrot">Details ▼</button>
                     <div class="company-description hidden-snake">
@@ -299,8 +317,8 @@
                   </div>
                   
               
-                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Duport Midstream Company Limited
-                  " data-status="Active" data-solution="Oil & Gas" data-region="Africa">
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Duport Midstream
+                  " data-status="Active" data-solution="Profit" data-region="Nigeria">
                     <img src="./img/logo/5.png" alt="Company Logo" class="card-logo">
                     <button class="toggle-parrot">Details ▼</button>
                     <div class="company-description hidden-snake">
@@ -320,6 +338,445 @@
                   
               
                   <!-- Add more cards here -->
+                   <!-- Company Cards -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="JidiTrust" data-status="Active" data-solution="Profit" data-region="Ghana">
+                    <img src="./img/jiditrust.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>JidiTrust is a leading financial inclusion company dedicated to empowering individuals and businesses in Africa.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="modal-hawk" id="modal-profile">
+                    <div class="modal-content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/jiditrust.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Afya Rekod" data-status="Active" data-solution="profit" data-region="Kenya">
+                    <img src="./img/afya1.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>AfyaRekod is a digital health data company that offers various solutions like Universal Patient Portal, Universal Doctor`s Portal and Hospital Management</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/afya1.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Wami Agro" data-status="Active" data-solution="profit" data-region="Ghana">
+                    <img src="./img/ami agro.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Wami Agro Limited is a Ghana-based agritech company working hard to turn smallholder farmers into stewards of high-production, yet sustainable land.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/ami agro.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Angel Ventures" data-status="Active" data-solution="Profit" data-region="LatinAmerica">
+                    <img src="./img/Angel ventures.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>The Firm invests in early-stage to early-growth companies by becoming a leading Series Seed and Series A investor in startups that drive innovative business models tailored for the Latin American market.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/Angel ventures.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Atlantic
+                  " data-status="Active" data-solution="profit" data-region="Nigeria">
+                    <img src="./img/atalantic1.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Atlantic Intl Refinery & Petrochemicals Limited is an indigenous oil & gas, petrochemical and infrastructure business</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/atalantic1.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <!-- Company Cards -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Bookings" data-status="Active" data-solution="Profit" data-region="SouthAfrica">
+                    <img src="./img/bookings.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>BookingsAfrica.com is the largest online freelance marketplace to simply source, compare and book the creatives needed for the media and entertainment industry</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="modal-hawk" id="modal-profile">
+                    <div class="modal-content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/bookings.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Edoctorug" data-status="Active" data-solution="Profit" data-region="Uganda">
+                    <img src="./img/edoctorug.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Edoctorug is a telemedicine company that saves lives of people by bringing health services and products closure to people in the world</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/edoctorug.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Edusko" data-status="Active" data-solution="Profit" data-region="Nigeria">
+                    <img src="./img/edusko.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Africa's biggest education marketplace for top schools, parents, students & solution providers.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/edusko.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="EliteCV" data-status="Active" data-solution="Profit" data-region="SouthAfrica">
+                    <img src="./img/elitecv.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Elite-CV is a leading career branding and professional CV services company servicing the international market.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/elitecv.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="ingressive capital
+                  " data-status="Active" data-solution="Profit" data-region="Nigeria">
+                    <img src="./img/ingressive.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Ingressive Capital targets tech-enabled startups in Nigeria, Kenya, Ghana, Morocco and Egypt. The fund is Delaware-incorporated and headquartered in Nigeria</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/ingressive.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <!-- Company Cards -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="jiditrust" data-status="Active" data-solution="Profit" data-region="Ghana">
+                    <img src="./img/jiditrust.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>JidiTrust is a leading financial inclusion company dedicated to empowering individuals and businesses in Africa</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="modal-hawk" id="modal-profile">
+                    <div class="modal-content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/jiditrust.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Jobelyn" data-status="Active" data-solution="Profit" data-region="NorthAmerica">
+                    <img src="./img/jobelyn.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Jobelyn is a highly effective dietary supplement which strengthens the body's immune system and helps it fight off diseases.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/jobelyn.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Koniku" data-status="Active" data-solution="Profit" data-region="NorthAmerica">
+                    <img src="./img/koniku.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Koniku is the worlds first corporation of its kind. We are the leading brand in neurotechnology devices.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/koniku.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Leo Flight" data-status="Active" data-solution="profit" data-region="NorthAmerica">
+                    <img src="./img/leo flight.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Your personal, all-electric flying jet cars. LEO Flight is The world's first car company for the sky.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/leo flight.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Mac Venture Capital
+                  " data-status="Active" data-solution="profit" data-region="NorthAmerica">
+                    <img src="./img/mac venture.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>MaC Venture Capital is an early stage venture capital firm focused on finding ideas, technology, and products that can become infectious.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/mac venture.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <!-- Company Cards -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Omnicharge" data-status="Active" data-solution="Profit" data-region="China">
+                    <img src="./img/omnicharge.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Omnicharge is the Swiss Army knife of power, offering a versatile and reliable mobile charging solution.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="modal-hawk" id="modal-profile">
+                    <div class="modal-content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/omnicharge.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Ridge Energy" data-status="Active" data-solution="Healthcare" data-region="Nigeria">
+                    <img src="./img/ridge.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>At RiDGE, we don't just develop technology, we design the future of energy: Clean, inexhaustible and accessible to all.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/ridge.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="rxail" data-status="Active" data-solution="profit" data-region="NorthAmerica">
+                    <img src="./img/rxail.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>RxAll is a health-tech platform that provides digital infrastructure to pharmacies (including those in hospitals).</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/rxail.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="saferoom" data-status="Active" data-solution="profit" data-region="LatinAmerica">
+                    <img src="./img/saferoom.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>SafeRoom is a secure messaging platform for your team and/or clients. SafeRoom is the app for existing SafeRoom clients.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/saferoom.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Sendoff
+                  " data-status="Active" data-solution="profit" data-region="SouthAfrica">
+                    <img src="./img/sendoff.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Plan, Book & manage the entire Funeral. From wherever you are, use your Phone or Tablet to book a hall, order flowers, issue obituaries, send out notices</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/sendoff.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <!-- Company Cards -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Spleet" data-status="Active" data-solution="profit" data-region="NorthAmerica">
+                    <img src="./img/spleet1.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Spleet is a complete rental management solution for landlords and tenants in Africa. List an apartment for free, rent an apartment and pay flexibly</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="modal-hawk" id="modal-profile">
+                    <div class="modal-content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/Spleet1.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Unicorn Investment" data-status="Active" data-solution="Profit" data-region="Ghana">
+                    <img src="./img/unicorn.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>The "Unicorn Group" is a pan-African innovation and entrepreneurship ecosystem, offering investment capital, advisory support, and incubation services to startups and early-stage companies in the technology sector across Africa.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/unicorn.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="card-unicorn" data-name="Zuri Health" data-status="Active" data-solution="Profit" data-region="Kenya">
+                    <img src="./img/zuri1.png" alt="Company Logo" class="card-logo">
+                    <button class="toggle-parrot">Details ▼</button>
+                    <div class="company-description hidden-snake">
+                      <p>Zuri Health is a virtual hospital providing affordable and accessible healthcare services to patients across Sub-saharan Africa via a Mobile App, website</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Modal Structure -->
+                  <div class="modal-hawk" id="modal-profile">
+                    <div class="modal-content">
+                      <span class="close-modal" id="close-modal">&times;</span>
+                      <h2 id="company-name"></h2>
+                      <img id="company-logo" src="./img/zuri1.png" alt="Company Logo">
+                      <p id="company-description"></p>
+                    </div>
+                  </div>
+                  
+              
+                  
+              
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
                 </div>
               
                 <div id="no-results-snake" class="no-results-snake hidden-snake">No results found.</div>
