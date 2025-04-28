@@ -44,7 +44,7 @@
             <a href="#"><img src="img/logos.png" alt=""></a>
         </div>
         <ul>
-            <li class="active"><a href="./index.html">Home</a></li>
+            <li ><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./team.html">Our Team</a></li>
             <li><a href="./portfolio.html">Our Portfolio</a></li>
@@ -52,7 +52,7 @@
             <li><a href="./initiative.html">Our Initiatives</a>
                
             </li>
-            <li><a href="./media.html">Media</a></li>
+            <li class="active"><a href="./media.html">Media</a></li>
         
             <li><a href="./contacts.html">Contact Us</a></li>
         </ul>
@@ -73,7 +73,7 @@
                 <div class="col-lg-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li ><a href="./index.html">Home</a></li>
                             <li><a href="./about.html">About Us</a></li>
                             <li><a href="./team.html">Our Team</a></li>
                             <li><a href="./portfolio.html">Our Portfolio</a></li>
@@ -81,7 +81,7 @@
                             <li><a href="./initiative.html">Our Initiatives</a>
                                
                             </li>
-                            <li><a href="./media.html">Media</a></li>
+                            <li class="active"><a href="./media.html">Media</a></li>
                         
                             <li><a href="./contacts.html">Contact Us</a></li>
                         </ul>
@@ -184,85 +184,100 @@
     <!-- Latest Section Begin -->
     <section class="unique-latest-sections">
         <div class="unique-container">
-            <section class="media-section">
-                <!-- Tabs for Pictures and Videos -->
-                <div class="media-tabs" style="margin-top: 100px;">
-                  <button class="tab-button" id="pictures-tab" onclick="showPictures()">Latest News</button>
-                  <button class="tab-button" id="videos-tab" onclick="showVideos()">Gallery</button>
+            <div class="wobbly-tabs">
+                <div class="wobbly-tab-buttons">
+                  <button class="wobbly-tab-btn active" data-target="press">Press</button>
+                  <button class="wobbly-tab-btn" data-target="news">News</button>
+                  <button class="wobbly-tab-btn" data-target="events">Events</button>
+                  <button class="wobbly-tab-btn" data-target="blogs">Blogs</button>
                 </div>
               
-                <!-- Pictures Tab Content -->
-                <div class="media-content pictures" id="pictures-content">
-                  <div class="media-container">
-                    <div class="media-item" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
-                      <img src="./img/Africa Business Convention 2023.jpg" alt="Picture 1" />
-                      <div class="media-info">
-                        <h5>Africa Business Convention 2023</h5>
-                        <a href="" style="text-decoration: underline; color: #6685c2;">Read More</a>
-                      </div>
+                <div class="wobbly-tab-content">
+                  <div class="wobbly-tab-panel active" id="press">
+                    <div class="floopy-card">
+                      <img src="./img/po.jpg">
+                      <h5>Press Release 1</h5>
+                      <p>This is a short description of the press</p>
+                      <button class="zigzag-btn">Learn More</button>
                     </div>
-                    <div class="media-item" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
-                      <img src="./img/Investing in the Future of Africa.png" alt="Picture 2" />
-                      <div class="media-info">
-                        <h5>Investing in the Future of Africa</h5>
-                        <a href="" style="text-decoration: underline; color: #6685c2;">Read More</a>
-                      </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Press Release 2</h5>
+                      <p>Another exciting press announcement!</p>
+                      <button class="zigzag-btn">Watch Now</button>
                     </div>
-                    <div class="media-item" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
-                      <img src="./img/Unleashing the Value and Potential of the African Creative Industry.png" alt="Picture 3" />
-                      <div class="media-info">
-                        <h5>Unleashing the Value and Potential of the African Creative Industry
-                        </h5>
-                        <a href="" style="text-decoration: underline; color: #6685c2;">Read More</a>
-                      </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Press Release 3</h5>
+                      <p>Latest updates from our company.</p>
+                      <button class="zigzag-btn">Learn More</button>
                     </div>
-                    
+                  </div>
+              
+                  <div class="wobbly-tab-panel" id="news">
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>News Story 1</h5>
+                      <p>Breaking news that matters to you.</p>
+                      <button class="zigzag-btn">Learn More</button>
+                    </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>News Story 2</h5>
+                      <p>Updates from around the world.</p>
+                      <button class="zigzag-btn">Watch Now</button>
+                    </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>News Story 3</h5>
+                      <p>Stay informed with the latest developments.</p>
+                      <button class="zigzag-btn">Learn More</button>
+                    </div>
+                  </div>
+              
+                  <div class="wobbly-tab-panel" id="events">
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Event 1</h5>
+                      <p>Don't miss our upcoming event!</p>
+                      <button class="zigzag-btn">Learn More</button>
+                    </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Event 2</h5>
+                      <p>Mark your calendar for this special event.</p>
+                      <button class="zigzag-btn">Watch Now</button>
+                    </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Event 3</h5>
+                      <p>Exciting gatherings and meetups!</p>
+                      <button class="zigzag-btn">Learn More</button>
+                    </div>
+                  </div>
+              
+                  <div class="wobbly-tab-panel" id="blogs">
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Blog Post 1</h5>
+                      <p>Insights and ideas for you.</p>
+                      <button class="zigzag-btn">Learn More</button>
+                    </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Blog Post 2</h5>
+                      <p>Thoughts and inspirations shared weekly.</p>
+                      <button class="zigzag-btn">Watch Now</button>
+                    </div>
+                    <div class="floopy-card">
+                        <img src="./img/po.jpg">
+                      <h5>Blog Post 3</h5>
+                      <p>Deep dives into new topics.</p>
+                      <button class="zigzag-btn">Learn More</button>
+                    </div>
                   </div>
                 </div>
-              
-                <!-- Videos Tab Content -->
-                <div class="media-content videos" id="videos-content" style="display:none;">
-                  <div class="media-container">
-                    <div class="media-item" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
-                      <img src="./img/video.jpg" alt="Video 1 Thumbnail" class="video-thumbnail" onclick="openModal('xobBwKT0hzk')" />
-                      <div class="media-info">
-                        <h5>Video 1 Title</h5>
-                        <p>Video description goes here.</p>
-                      </div>
-                    </div>
-                    <div class="media-item" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
-                      <img src="./img/video1.jpg" alt="Video 2 Thumbnail" class="video-thumbnail" onclick="openModal('iou6J7lHWpU')" />
-                      <div class="media-info">
-                        <h5>Video 2 Title</h5>
-                        <p>Video description goes here.</p>
-                      </div>
-                    </div>
-                    <div class="media-item" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200">
-                      <img src="./img/video.jpg" alt="Video 3 Thumbnail" class="video-thumbnail" onclick="openModal('GEgDu2mEusA')" />
-                      <div class="media-info">
-                        <h5>Video 3 Title</h5>
-                        <p>Video description goes here.</p>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              
-                <!-- Modal for YouTube Videos -->
-                <div id="videoModal" class="video-modal">
-                  <div class="modal-content">
-                    <span class="close-btn" onclick="closeModal()">&times;</span>
-                    <div id="modal-video"></div>
-                  </div>
-                </div>
-              </section>
-              
-            
-         
-              
-            
-        </div>
-        
+              </div>              
           
     </section><!-- Latest Section End -->
    

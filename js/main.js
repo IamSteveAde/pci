@@ -275,44 +275,21 @@
 
 })(jQuery);
 
-// Show Pictures Tab
-function showPictures() {
-    // Show pictures and hide videos
-    document.getElementById("pictures-content").style.display = "block";
-    document.getElementById("videos-content").style.display = "none";
-  
-    // Highlight the active tab
-    document.getElementById("pictures-tab").style.backgroundColor = "#357ab7";
-    document.getElementById("videos-tab").style.backgroundColor = "#4a90e2";
-  }
-  
-  // Show Videos Tab
-  function showVideos() {
-    // Show videos and hide pictures
-    document.getElementById("pictures-content").style.display = "none";
-    document.getElementById("videos-content").style.display = "block";
-  
-    // Highlight the active tab
-    document.getElementById("videos-tab").style.backgroundColor = "#357ab7";
-    document.getElementById("pictures-tab").style.backgroundColor = "#4a90e2";
-  }
-  
-  // Open YouTube Video Modal and Load Video
-  function openModal(videoId) {
-    var modal = document.getElementById("videoModal");
-    var modalVideo = document.getElementById("modal-video");
-  
-    // Update the modal with the correct video
-    modalVideo.innerHTML = '<iframe width="100%" height="500" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-    modal.style.display = "flex";
-  }
-  
-  // Close Modal
-  function closeModal() {
-    var modal = document.getElementById("videoModal");
-    modal.style.display = "none";
-    document.getElementById("modal-video").innerHTML = "";
-  }
+const tabButtons = document.querySelectorAll('.wobbly-tab-btn');
+const tabPanels = document.querySelectorAll('.wobbly-tab-panel');
+
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active classes
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabPanels.forEach(panel => panel.classList.remove('active'));
+
+    // Add active class to clicked button and matching panel
+    button.classList.add('active');
+    const target = button.getAttribute('data-target');
+    document.getElementById(target).classList.add('active');
+  });
+});
   document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-lemon');
     const statusFilter = document.getElementById('status-cherry');
@@ -493,4 +470,57 @@ document.addEventListener('DOMContentLoaded', function() {
       form.reset();
     });
   });
+
   
+  //insight page
+  const grid = document.getElementById('zx7-grid');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+// Example content array
+const articles = [
+  { title: "AI in 2025", desc: "Where AI is heading globally.", img: "https://via.placeholder.com/600x400" },
+  { title: "Green Energy", desc: "Sustainability in tech companies.", img: "https://via.placeholder.com/600x400" },
+  { title: "Women in Tech", desc: "Empowering female leaders.", img: "https://via.placeholder.com/600x400" },
+  { title: "Remote Work Trends", desc: "How businesses are adapting.", img: "https://via.placeholder.com/600x400" },
+  { title: "Cybersecurity 101", desc: "Protecting your online data.", img: "https://via.placeholder.com/600x400" },
+  { title: "Next-Gen Software", desc: "Tech companies to watch.", img: "https://via.placeholder.com/600x400" },
+  { title: "Diversity Matters", desc: "Building inclusive workspaces.", img: "https://via.placeholder.com/600x400" },
+  { title: "Web3 Explained", desc: "Future of decentralized internet.", img: "https://via.placeholder.com/600x400" },
+];
+
+// Load batch size
+let batch = 4;
+let current = 0;
+
+// Function to load cards
+function loadCards() {
+  const slice = articles.slice(current, current + batch);
+  slice.forEach((article, index) => {
+    const card = document.createElement('div');
+    card.className = 'zx7-card' + (index % 5 === 0 ? ' large' : '');
+    card.innerHTML = `
+      <img src="${article.img}" alt="${article.title}">
+      <div class="zx7-card-content">
+        <h3>${article.title}</h3>
+        <p>${article.desc}</p>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+  current += batch;
+  
+  if (current >= articles.length) {
+    loadMoreBtn.style.display = 'none';
+  }
+}
+
+
+
+// Load first cards
+loadCards();
+
+// Button click
+loadMoreBtn.addEventListener('click', loadCards);
+
+
+
