@@ -5,7 +5,7 @@
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
-    margin-top: 80px;
+    margin-top: 10px;
   }
   
   .wrap-bumblebee {
@@ -29,7 +29,7 @@
   }
   
   .title-giraffe {
-    font-size: 32px;
+    font-size: 28px;
     
   }
   
@@ -145,7 +145,7 @@
   }
   
   .card-unicorn img {
-    max-width: 100px;
+    width: 60%;
     object-fit: contain;
     margin-right: 10px;
     filter: brightness(0) invert(1);
@@ -181,6 +181,9 @@
       z-index: 1000;
       opacity: 0;
       transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .card-unicorn img{
+      width: 40%;
     }
 
   }
@@ -230,11 +233,12 @@
   /* Adjust the button for toggling details */
   .toggle-parrot {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #6685c2;
     border-radius: 4px;
-    background-color: #6685c2;
+    background-color: transparent;
     color: white;
     cursor: pointer;
+    font-size: 10px;
   }
   
   .toggle-parrot:hover {
