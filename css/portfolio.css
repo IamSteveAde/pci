@@ -38,6 +38,7 @@
     
     padding: 20px 0;
     border: 1px solid #6685c2;
+    background-color: #6685c22c;
   }
   
   .filter-octopus {
@@ -68,6 +69,7 @@
   .card-unicorn {
     
     border: 1px solid #e0e0e0;
+    background-color: #6685c226;
     
     height: 150px;
     display: flex;
@@ -125,7 +127,7 @@
 
   /* General Card Styles */
 .card-unicorn {
-    background: #fff;
+    background: #6685c225;
     border: 1px solid #e0e0e0;
     box-shadow: 5px 5px #6685c2;
     height: 150px;
@@ -146,6 +148,7 @@
     max-width: 100px;
     object-fit: contain;
     margin-right: 10px;
+    filter: brightness(0) invert(1);
   }
   
   /* Modal Styles */
