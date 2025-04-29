@@ -340,6 +340,7 @@ body {
     margin: 0;
     font-size: 1.6rem;
     color: #111;
+    text-align: left;
   }
   
   .modal-info .role {
@@ -354,6 +355,7 @@ body {
     line-height: 1.6;
     color: #444;
     font-size: 0.95rem;
+    text-align: left;
   }
   
   .modal-info .socials {
