@@ -33,9 +33,21 @@
     color: white;
     text-align: center;
   }
+  @media (max-width: 768px) {
+    .cta-buttons{
+        display: grid;
+       
+    }
+    .cta-buttons a{
+       
+        margin-top: 10px;
+    }
+    
+  }
 
   .aura-solutions h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
@@ -173,7 +185,7 @@
   }
 
   .cta-buttons a {
-    margin: 0 1rem;
+   
     padding: 0.8rem 1.5rem;
     background: #6685c2;
     color: white;
