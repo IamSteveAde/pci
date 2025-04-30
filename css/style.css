@@ -36,6 +36,7 @@ body {
 	height: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
 
 }
 body{
@@ -567,6 +568,7 @@ ol {
 	margin-top: 20px;
 	
 }
+
 .abouts{
 	background-image: url(/img/hero/logos\ \(2\).webp);
 	background-repeat: no-repeat;
@@ -3874,23 +3876,24 @@ ol {
 	padding: 100px 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-bottom: 50px;
-  }
+}
 
 
-  .grape-owl {
+
+.grape-owl {
 	font-size: 36px;
 	font-weight: 800;
 	margin-bottom: 15px;
 	width: 100%;
-  }
+}
 
-  .banana-lighthouse {
+.banana-lighthouse {
 	font-size: 15px;
 	color: #BBBBBB;
 	margin-bottom: 40px;
-  }
+}
 
-  .cactus-trampoline {
+.cactus-trampoline {
 	background-color: transparent;
 	color: #6685c2;
 	padding: 15px 35px;
@@ -3900,18 +3903,20 @@ ol {
 	border-radius: 30px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-  }
+}
 
-  .cactus-trampoline:hover {
+.cactus-trampoline:hover {
 	background-color: white;
 	color: #070f21;
-  }
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
 	.container1 {
 	  width: 90%;
 	  padding: 0 10px;
 	  margin-left: 20px;
 	}
+	
+	
 	#popl{
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -3961,11 +3966,11 @@ ol {
 		margin-left: -10px;
 	}
 		
-	}
+}
 	
 	
   
-  .rainbow-glow {
+.rainbow-glow {
 	background: linear-gradient(
 	  270deg,
 	  #ffff,
@@ -3978,44 +3983,45 @@ ol {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: flowingColors 6s linear infinite;
-  }
+}
   
-  @keyframes flowingColors {
+@keyframes flowingColors {
 	0% {
 	  background-position: 0% 50%;
 	}
 	100% {
 	  background-position: 100% 50%;
 	}
-  }
-  .tem{
+}
+.tem{
 	width: 80%;
 	margin-left: 40px;
 	line-height: 20px;
-  }
-  .tem h4{
+}
+
+.tem h4{
 	margin-bottom: 20px;
 	margin-top: -20px;
 	color: #6685c2;
 
-  }
-  .tem h5{
+}
+.tem h5{
 	margin-bottom: 20px;
 	margin-top: 20px;
 	color: #6685c2;
 
-  }
-  #qwep{
+}
+#qwep{
 	border: solid 1px #6685c2;
 	padding: 30px 30px 30px 30px;
 	border-radius: 10px;
 	margin-bottom: 20px;
 	box-shadow: #b5caf3 5px 5px;
-  }
-  .tem p{
+}
+.tem p{
 	line-height: 25px;
-  }
-  #modal {
+}
+#modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -4026,23 +4032,23 @@ ol {
 	justify-content: center;
 	align-items: center;
 	z-index: 9999;
- }
- .modal-content {
+}
+.modal-content {
 	background-color: #070f21;
 	padding: 20px;
 	border-radius: 8px;
 	width: 80%;
 	max-width: 600px;
 	text-align: center;
- }
- #closeModalBtn {
+}
+#closeModalBtn {
 	position: absolute;
 	top: 10px;
 	right: 10px;
 	font-size: 30px;
 	cursor: pointer;
- }
- .hero-eagle {
+}
+.hero-eagle {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('/img/Vista_Insights_Header.jpg') center/cover no-repeat;
     color: #fff;
@@ -4058,30 +4064,165 @@ ol {
     position: relative;
       
       
-  }
+}
   
-  .hero-content {
+.hero-content {
     max-width: 800px;
     margin: 0 auto;
-  }
+}
   
-  .hero-content h1 {
+.hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: bold;
-  }
+}
   
-  .hero-content p {
+.hero-content p {
     font-size: 20px;
     line-height: 1.6;
-  }
+}
 
-  body {
+body {
 	overflow-x: hidden;
 	max-width: 100%;
-  }
-  #popl{
+}
+#popl{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: white;
-  }
+}
+.scrollScepter {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(255, 255, 255, 0.8);
+	border: none;
+	font-size: 24px;
+	padding: 10px 14px;
+	border-radius: 50%;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	cursor: pointer;
+	z-index: 5;
+	transition: background 0.3s;
+}
+
+.scrollScepter:hover {
+	background: rgba(255, 255, 255, 1);
+}
+
+#scrollLeftRune {
+	left: 1%;
+	color: black;
+	position: relative;
+	
+	top: 40vh;
+	
+	
+}
+
+#scrollRightRune {
+	right: -90%;
+	top: 40vh;
+	color: black;
+	position: relative;
+}
+
+
+#vaultSlider {
+	display: flex;
+	overflow-x: auto;
+	gap: 24px;
+	scroll-behavior: smooth;
+	padding-bottom: 16px;
+	
+	margin-bottom: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#vaultSlider::-webkit-scrollbar {
+	display: none;
+}
+
+.realmCardX {
+	min-width: 280px;
+	max-width: 300px;
+	background-color: #6685c22b;
+	border-radius: var(--lux-radius);
+	box-shadow: var(--lux-shadow);
+	overflow: hidden;
+	flex-shrink: 0;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.luxeImageFrame {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.chateauContent {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.elixirTitle {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #6685c2;
+}
+
+.elixirDesc {
+	font-size: 0.9rem;
+	color: var(--lux-muted);
+	line-height: 1.4;
+}
+
+.callSigil {
+	background-color: #6685c2;
+	color: white;
+	border: none;
+	padding: 10px 16px;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	align-self: start;
+}
+
+.callSigil:hover {
+	background-color: transparent;
+	border: 1px solid #6685c2;
+}
+#iii{
+	margin-top: 100px;
+	
+}
+@media (max-width: 768px) {
+	
+
+	.realmCardX {
+	  min-width: 240px;
+	}
+	#kor{
+		margin-top: -200px;
+	}
+
+	.chateauContent {
+	  padding: 16px;
+	}
+
+	.scrollScepter {
+	  display: none;
+	}
+	
+	
+	
+	
+	
+}
