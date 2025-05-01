@@ -144,7 +144,7 @@
 
   .logo-slider {
     display: flex;
-    animation: scrollSlider 30s linear infinite;
+    animation: scrollSlider 10s linear infinite;
   }
 
   .logo-slider img {

@@ -4210,7 +4210,10 @@ body {
 	  min-width: 240px;
 	}
 	#kor{
-		margin-top: -200px;
+		margin-top: -80px;
+	}
+	#popi{
+		padding-top: -20px;
 	}
 
 	.chateauContent {
