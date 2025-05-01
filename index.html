@@ -568,6 +568,31 @@
         </div>
 
         <!-- Carousel container -->
+         <!-- Modal Structure -->
+         <div id="popup-form" class="popup-overlay">
+            <div class="popup-content">
+              <h3>Get the Full Report</h3>
+              <p>We will send the full report to your email.</p>
+              <form id="reportForm">
+                <input type="text" name="Full Name" placeholder="Full Name" required>
+                <input type="text" name="Title of Report" id="reportTitleInput" placeholder="Title of Report" required>
+                <input type="email" name="Email" placeholder="Email Address" required>
+                <input type="text" name="Company Name" placeholder="Company Name" required>
+                <input type="text" name="Position Held" placeholder="Position Held" required>
+                
+                <!-- Optional: Prevent spam bots -->
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Optional: Redirect after success -->
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                
+                <button type="submit">Send</button>
+              </form>
+              <div id="formStatus" style="margin-top: 10px; color: white;"></div>
+              
+              <span class="close-btn">&times;</span>
+            </div>
+          </div>
         <div id="vaultSlider">
             
             <!-- Card 1 -->
@@ -578,7 +603,8 @@
                     empowerment in society</div>
                 <div class="elixirDesc">The benefits associated with prioritising the boosting women’s economic empowerment
                     is compelling</div>
-                <button class="callSigil">Request Report</button>
+                    <a href="#" class="openPopup callSigil primary-btn normal-btn" data-title="The Case for Women’s financial
+                    empowerment in society">Request Full Report</a>
             </div>
             </div>
 
@@ -589,7 +615,7 @@
                 <div class="elixirTitle">What will Africa look like years from now?</div>
                 <div class="elixirDesc">Africa to become the workforce of the globe in decades, fundamentals are strong and
                     investors’ appetite is increasing</div>
-                <button class="callSigil">Request Report</button>
+                    <a href="#" class="openPopup callSigil primary-btn normal-btn" data-title="What will Africa look like years from now?">Request Full Report</a>
             </div>
             </div>
 
@@ -599,7 +625,7 @@
             <div class="chateauContent">
                 <div class="elixirTitle">Education & Training is one of the four pillars of the Knowledge Economy</div>
                 <div class="elixirDesc">Education remains a potent tool for self-reliance and national development in any country of the world.</div>
-                <button class="callSigil">Request Report</button>
+                <a href="#" class="openPopup callSigil primary-btn normal-btn" data-title="Education & Training is one of the four pillars of the Knowledge Economy">Request Full Report</a>
             </div>
             </div>
 
@@ -610,7 +636,7 @@
                 <div class="elixirTitle">Birth of Diaspora: Early Migration</div>
                 <div class="elixirDesc">The history of the African diaspora is as old as human civilization as people of 5
                     African origin have been in constant motion for over 100,000 years.</div>
-                <button class="callSigil">Request Report</button>
+                    <a href="#" class="openPopup callSigil primary-btn normal-btn" data-title="Birth of Diaspora: Early Migration">Request Full Report</a>
             </div>
             </div>
 
@@ -621,7 +647,7 @@
                 <div class="elixirTitle">The Golden African Age Empires & Kingdoms</div>
                 <div class="elixirDesc">Post-colonisation, we have struggled to deliver quality education and skills development,
                     hard infrastructure and build sustainable governance systems</div>
-                <button class="callSigil">Request Report</button>
+                    <a href="#" class="openPopup callSigil primary-btn normal-btn" data-title="The Golden African Age Empires & Kingdoms">Request Full Report</a>
             </div>
             </div>
         </div>
@@ -659,10 +685,11 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="footer__top__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
+                            <form id="reachus">
+                                <input type="email" name="Email" placeholder="Enter your email..." required>
                                 <button type="submit"><i class="fa fa-send"></i></button>
                             </form>
+                            <div id="formStatus" style="margin-top: 10px; color: white;"></div>
                         </div>
                     </div>
                 </div>
@@ -829,7 +856,82 @@
       });
     });
   </script>
-
+  <script>
+    document.querySelectorAll(".openPopup").forEach(function(button) {
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        const reportTitle = this.getAttribute("data-title");
+        document.getElementById("reportTitleInput").value = reportTitle;
+        document.getElementById("popup-form").style.display = "flex";
+      });
+    });
+    
+    document.querySelector(".close-btn").addEventListener("click", function() {
+      document.getElementById("popup-form").style.display = "none";
+    });
+    
+    window.onclick = function(e) {
+      const popup = document.getElementById("popup-form");
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    };
+    </script>
+    
+    <script>
+        document.getElementById("reportForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent default form submission
+        
+            const form = e.target;
+            const data = new FormData(form);
+        
+            fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+                method: "POST",
+                body: data
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.success === "true") {
+                    document.getElementById("formStatus").innerText = "Sent successfully!";
+                    form.reset(); // Optionally clear form
+                } else {
+                    document.getElementById("formStatus").innerText = "Error sending report. Please try again.";
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                document.getElementById("formStatus").innerText = "An error occurred. Please try again.";
+            });
+        });
+        </script>
+        <script>
+            document.getElementById("reachus").addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent redirect
+            
+                const form = e.target;
+                const data = new FormData(form);
+            
+                fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+                    method: "POST",
+                    body: data
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.success === "true") {
+                        document.getElementById("formStatus").innerText = "Email submitted successfully!";
+                        form.reset();
+                    } else {
+                        document.getElementById("formStatus").innerText = "Something went wrong. Please try again.";
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    document.getElementById("formStatus").innerText = "An error occurred while sending.";
+                });
+            });
+            </script>
+            
+        
 
 
 

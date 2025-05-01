@@ -167,6 +167,32 @@
     <!-- Latest Section Begin -->
     <section class="unique-latest-section">
         <div class="unique-containerz">
+            <!-- Modal Structure -->
+            <div id="popup-form" class="popup-overlay">
+                <div class="popup-content">
+                  <h3>Get the Full Report</h3>
+                  <p>We will send the full report to your email.</p>
+                  <form id="reportForm">
+                    <input type="text" name="Full Name" placeholder="Full Name" required>
+                    <input type="text" name="Title of Report" id="reportTitleInput" placeholder="Title of Report" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <input type="text" name="Company Name" placeholder="Company Name" required>
+                    <input type="text" name="Position Held" placeholder="Position Held" required>
+                    
+                    <!-- Optional: Prevent spam bots -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- Optional: Redirect after success -->
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                    
+                    <button type="submit">Send</button>
+                  </form>
+                  <div id="formStatus" style="margin-top: 10px; color: white;"></div>
+                  <span class="close-btn">&times;</span>
+                </div>
+              </div>
+              
+              
            
             <div data-aos="fade-in" data-aos-delay="300" data-aos-duration="1200" class="tem" id="qwep" data-aos=" " data-aos-delay="600" data-aos-duration="1200">
                 <h4 class="buy"  id="buys" data-aos=" " data-aos-delay="600" data-aos-duration="1200">A Debt You Owe</h4>
@@ -180,7 +206,7 @@
                     societal development. </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Taxation is the bedrock for political, economic and social development of any country">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -203,7 +229,7 @@
                     back to the continent </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="From Africa to the World">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -226,7 +252,7 @@
                     investors’ appetite is increasing </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="What will Africa look like years from now?">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -248,7 +274,7 @@
                 <p>Education remains a potent tool for self-reliance and national development in any country of the world.</p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Education & Training is one of the four pillars of the Knowledge Economy">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -273,7 +299,7 @@
                     African origin have been in constant motion for over 100,000 years. </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Birth of Diaspora: Early Migration">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -297,7 +323,7 @@
                     hard infrastructure and build sustainable governance systems</p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="The Golden African Age Empires & Kingdoms">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -322,7 +348,7 @@
                     currently and where it is headed </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="3-pronged framework outlined">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -347,7 +373,8 @@
                     institutions</p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Understanding Alumni
+                 Associations">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -374,7 +401,8 @@
                     is compelling</p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="The Case for Women’s financial
+                 empowerment in society">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -397,7 +425,7 @@
                     compounded in recent times due to post -pandemic realities of the aviation industry in light of staggering debt levels. </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Your flying jet car has arrived!">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -422,7 +450,7 @@
                     Continent cannot be overemphasized </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Evolution of Unicorn Startups solutions within the African">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -452,7 +480,8 @@
                     ecosystem.</p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Unicorns founded by Africans and individuals of African descent
+                 birthed in 2021">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -475,7 +504,7 @@
                 <p>The global economy is in a recovery phase following its exit from the COVID-19 propelled recession through a GDP growth of 5.7% in 2021. </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Global Macroeconomic Report">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -503,7 +532,8 @@
                     we have not just kept records of our wins </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Africa to become the workforce of the globe in decades, fundamentals are strong and
+                 investors’ appetite is increasing">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -530,7 +560,8 @@
                     24th June 2021. </p>
                     
                     
-                 <br> <a href="#" id="openModalBtn" class="primary-btn normal-btn">Download Full Report</a>
+                 <br> <a href="#" class="openPopup primary-btn normal-btn" data-title="Four Silicon Valley VC firms notched billion-
+                 dollar IPO wins">Request Full Report</a>
             </div>
             <div id="modal" style="display: none;">
                 <div class="modal-content">
@@ -557,10 +588,11 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="footer__top__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
+                            <form id="reachus">
+                                <input type="email" name="Email" placeholder="Enter your email..." required>
                                 <button type="submit"><i class="fa fa-send"></i></button>
                             </form>
+                            <div id="formStatus" style="margin-top: 10px; color: white;"></div>
                         </div>
                     </div>
                 </div>
@@ -731,6 +763,83 @@
        }
     });
  </script>
+
+<script>
+    document.querySelectorAll(".openPopup").forEach(function(button) {
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        const reportTitle = this.getAttribute("data-title");
+        document.getElementById("reportTitleInput").value = reportTitle;
+        document.getElementById("popup-form").style.display = "flex";
+      });
+    });
+    
+    document.querySelector(".close-btn").addEventListener("click", function() {
+      document.getElementById("popup-form").style.display = "none";
+    });
+    
+    window.onclick = function(e) {
+      const popup = document.getElementById("popup-form");
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    };
+    </script>
+
+<script>
+    document.getElementById("reportForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent default form submission
+    
+        const form = e.target;
+        const data = new FormData(form);
+    
+        fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+            method: "POST",
+            body: data
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.success === "true") {
+                document.getElementById("formStatus").innerText = "Sent successfully!";
+                form.reset(); // Optionally clear form
+            } else {
+                document.getElementById("formStatus").innerText = "Error sending report. Please try again.";
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            document.getElementById("formStatus").innerText = "An error occurred. Please try again.";
+        });
+    });
+    </script>
+    <script>
+        document.getElementById("reachus").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent redirect
+        
+            const form = e.target;
+            const data = new FormData(form);
+        
+            fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+                method: "POST",
+                body: data
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.success === "true") {
+                    document.getElementById("formStatus").innerText = "Email submitted successfully!";
+                    form.reset();
+                } else {
+                    document.getElementById("formStatus").innerText = "Something went wrong. Please try again.";
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                document.getElementById("formStatus").innerText = "An error occurred while sending.";
+            });
+        });
+        </script>
+        
+    
 
 
 

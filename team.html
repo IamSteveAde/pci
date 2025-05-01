@@ -361,10 +361,11 @@ x
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="footer__top__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
+                            <form id="reachus">
+                                <input type="email" name="Email" placeholder="Enter your email..." required>
                                 <button type="submit"><i class="fa fa-send"></i></button>
                             </form>
+                            <div id="formStatus" style="margin-top: 10px; color: white;"></div>
                         </div>
                     </div>
                 </div>
@@ -544,6 +545,33 @@ x
       document.getElementById(id).style.display = "none";
     }
     </script>
+    <script>
+        document.getElementById("reachus").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent redirect
+        
+            const form = e.target;
+            const data = new FormData(form);
+        
+            fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+                method: "POST",
+                body: data
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.success === "true") {
+                    document.getElementById("formStatus").innerText = "Email submitted successfully!";
+                    form.reset();
+                } else {
+                    document.getElementById("formStatus").innerText = "Something went wrong. Please try again.";
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                document.getElementById("formStatus").innerText = "An error occurred while sending.";
+            });
+        });
+        </script>
+        
     
 
 

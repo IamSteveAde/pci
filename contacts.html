@@ -189,7 +189,7 @@
   <section class="contact-section">
     <div class="form-container">
       <h2>Get in Touch</h2>
-      <form id="contact-form">
+      <form id="reportForm">
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your full name" required>
@@ -207,6 +207,7 @@
 
         <button type="submit" class="submit-btn">Send Message</button>
       </form>
+      <div id="formStatus" style="margin-top: 10px; color: green;"></div>
 
       <div id="form-message" class="form-message"></div>
     </div>
@@ -234,10 +235,11 @@
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="footer__top__newslatter">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
+                            <form id="reachus">
+                                <input type="email" name="Email" placeholder="Enter your email..." required>
                                 <button type="submit"><i class="fa fa-send"></i></button>
                             </form>
+                            <div id="formStatus" style="margin-top: 10px; color: white;"></div>
                         </div>
                     </div>
                 </div>
@@ -416,6 +418,60 @@
       document.getElementById(id).style.display = "none";
     }
     </script>
+
+<script>
+    document.getElementById("reportForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent default form submission
+    
+        const form = e.target;
+        const data = new FormData(form);
+    
+        fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+            method: "POST",
+            body: data
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.success === "true") {
+                document.getElementById("formStatus").innerText = "Sent successfully!";
+                form.reset(); // Optionally clear form
+            } else {
+                document.getElementById("formStatus").innerText = "Error sending report. Please try again.";
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            document.getElementById("formStatus").innerText = "An error occurred. Please try again.";
+        });
+    });
+    </script>
+    <script>
+        document.getElementById("reachus").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent redirect
+        
+            const form = e.target;
+            const data = new FormData(form);
+        
+            fetch("https://formsubmit.co/ajax/adediranstephen2000@gmail.com", {
+                method: "POST",
+                body: data
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.success === "true") {
+                    document.getElementById("formStatus").innerText = "Email submitted successfully!";
+                    form.reset();
+                } else {
+                    document.getElementById("formStatus").innerText = "Something went wrong. Please try again.";
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                document.getElementById("formStatus").innerText = "An error occurred while sending.";
+            });
+        });
+        </script>
+        
     
 
 
