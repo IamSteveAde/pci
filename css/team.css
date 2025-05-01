@@ -319,6 +319,9 @@ body {
     color: #999;
     cursor: pointer;
   }
+  .unique-latest-sections{
+    overflow-y: hidden;
+  }
   
   .close:hover {
     color: #000;
