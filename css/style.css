@@ -2150,7 +2150,7 @@ ol {
 	margin-top: 50px;
 	margin-right: 30px;
 	border-radius: 10px;
-	box-shadow: 0 15px 35px rgba(189, 186, 186, 0.566);
+	box-shadow: 0 5px 15px rgba(189, 186, 186, 0.566);
 }
 
 .about__pic__inner:after {
