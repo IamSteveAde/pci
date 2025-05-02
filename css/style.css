@@ -831,6 +831,7 @@ ol {
 	
 	transition: transform 0.3s ease;
 	margin-bottom: 100px;
+	box-shadow: 5px  10px 15px rgba(215, 213, 213, 0.3);
 }
 
 
@@ -1518,6 +1519,7 @@ ol {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	
 }
 
 /*---------------------
@@ -2148,6 +2150,7 @@ ol {
 	margin-top: 50px;
 	margin-right: 30px;
 	border-radius: 10px;
+	box-shadow: 0 15px 35px rgba(189, 186, 186, 0.566);
 }
 
 .about__pic__inner:after {
@@ -2384,6 +2387,7 @@ ol {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	box-shadow: 0 5px 15px rgba(215, 213, 213, 0.3);
 }
 
 /* Number Styling */
@@ -4159,6 +4163,7 @@ body {
 	color: white;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 5px 5px 15px rgba(215, 213, 213, 0.235);
 }
 
 .luxeImageFrame {
@@ -4172,6 +4177,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	
 }
 
 .elixirTitle {
