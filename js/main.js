@@ -327,8 +327,10 @@ tabButtons.forEach(button => {
   
       if (visibleCount === 0) {
         noResults.classList.remove('hidden-snake');
+        document.getElementById('video-background').style.display = 'block';
       } else {
         noResults.classList.add('hidden-snake');
+        document.getElementById('video-background').style.display = 'none';
       }
     }
   

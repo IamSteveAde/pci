@@ -69,7 +69,7 @@
   .card-unicorn {
     
     border: 1px solid #e0e0e0;
-    background-color: #6685c226;
+    background-color: white;
     
     height: 150px;
     display: flex;
@@ -127,7 +127,7 @@
 
   /* General Card Styles */
 .card-unicorn {
-    background: #6685c225;
+    background: white;
     border: 1px solid #e0e0e0;
     box-shadow: 5px 5px #6685c2;
     height: 150px;
@@ -148,8 +148,23 @@
     width: 60%;
     object-fit: contain;
     margin-right: 10px;
-    filter: brightness(0) invert(1);
+    
   }
+  video {
+  width: 100px;
+    
+    min-width: 100%;
+    min-height: 100%;
+  
+    object-fit: cover;
+    z-index: -1;
+  }
+  .card-unicorn {
+    display: none; /* Hide all cards by default */
+  }
+  
+  
+
   
   /* Modal Styles */
   .modal-hawk {
@@ -167,7 +182,7 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .modal-hawk img{
-    filter: brightness(0) invert(1);
+   
   }
 
   @media (max-width: 768px) {
@@ -239,7 +254,7 @@
     border: 1px solid #6685c2;
     border-radius: 4px;
     background-color: transparent;
-    color: white;
+    color: #6685c2;
     cursor: pointer;
     font-size: 10px;
   }

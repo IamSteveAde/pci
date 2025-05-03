@@ -43,17 +43,18 @@ section{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     
 
 }
 .miss h4{
-    color: rgb(171, 171, 171);
+    
 }
 .miss h2{
-    color: rgb(171, 171, 171);
+    
 }
 .miss p{
-    color: rgb(171, 171, 171);
+   
 }
 .oop {
     display: flex;
@@ -61,12 +62,25 @@ section{
     align-items: center;
     overflow-y: hidden;
     
+    
+}
+.qasd{
+  color: rgb(58, 58, 58);
+  padding-top: 30px;
+  
+}
+.qaz{
+  color: rgb(58, 58, 58);
+  font-size: 25px;
+  font-weight: 10px;
+  
 }
 .who-we-are {
     padding: 80px 10%;
     
-    font-family: 'Segoe UI', sans-serif;
-    color: #6685c2;
+    
+    font-family: 'GothamLight', sans-serif;
+    color: #010d24;
     overflow-y: hidden;
   }
   
@@ -75,7 +89,7 @@ section{
     font-weight: bold;
     margin-bottom: 15px;
     text-align: center;
-    color: #6685c2;
+    color: #010d24;
   }
   
   .who-we-are-flex {
@@ -84,9 +98,22 @@ section{
     gap: 60px;
     flex-wrap: wrap;
     border: 1px solid #6685c2;
-    background-color: #6685c234;
+    background: linear-gradient(-45deg, #010d24, #3A0D1F, #010d24);
+    background-size: 400% 400%;
+    animation: gradientShift 6s ease infinite;
     border-radius: 20px;
     overflow-y: hidden;
+  }
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   
   .who-we-are-image img {
@@ -100,14 +127,50 @@ section{
     border-bottom-right-radius: 100px;
   }
   .ikon{
-    border-radius: 50%;
-    width: 70px;
+   border-radius: 50%;
+    width: 30%;
     padding-bottom: 30px;
+    
+  }
+  #bus1{
+    background-color: #010d24;
+  }
+  #bus2{
+    background-color: #3A0D1F;
+  }
+  #bus4{
+    background-color: #04383f;
+  }
+  #bus3{
+    background-color: #1B103A;
+  
+  }
+ 
+  .iim{
+    background-image: url(/img/rfsa_pattern.svg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    width: 100%;
+    
+    
+  }
+  .backs {
+    position: absolute;
+    
+    width: 100vw;         /* Full width */
+    height: 100vh;        /* Full height */
+    background-image: url('/img/rfsa_pattern.svg');
+    background-size: contain;        /* Cover entire space */
+    background-position: center;   /* Center the image */
+    background-repeat: no-repeat;
+    z-index: -1;          /* Send it behind everything */
   }
   
   .who-we-are-text {
     flex: 1;
-    font-size: 1.25rem;
+    font-size: 14px;
    
     display: flex;
     flex-direction: column;
@@ -122,9 +185,9 @@ section{
     
   }
   .who-we-are-text p{
-    color: rgb(171, 171, 171);
-    font-weight: 200px;
-    font-size: 1.25rem;
+    
+    
+    font-size: 16px;
     
     
   }
@@ -144,7 +207,7 @@ section{
     font-weight: bold;
     margin-bottom: 50px;
     text-align: center;
-    color: #6685c2;
+    color: #010d24;
     overflow-y: hidden;
   }
   
@@ -160,7 +223,7 @@ section{
     color: white;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px 2px #6685c2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.285);
     transition: transform 0.3s ease;
   }
   
@@ -177,7 +240,7 @@ section{
   .value-box p {
     font-size: 1rem;
     line-height: 1.7;
-    color: #555;
+    color: rgb(226, 226, 226);
   }
   
   /* Responsive for tablets and below */
@@ -192,6 +255,7 @@ section{
     padding: 80px 10%;
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
+
   }
   
   .section-title {
@@ -207,6 +271,7 @@ section{
     margin-bottom: 60px;
     letter-spacing: 1px;
   }
+ 
   
   .strategy-container {
     display: flex;
@@ -220,11 +285,29 @@ section{
     border-radius: 15px;
     padding: 30px 25px;
     flex: 1 1 calc(33.33% - 20px);
-    box-shadow: 2px 2px 2px 2px #6685c2;
+    box-shadow: 0 10px 30px rgba(4, 11, 82, 0.486);
     transition: transform 0.3s ease;
     text-align: center;
+    background-color: #010d24;
+    
   }
-  
+  .afr{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+  }
+  .backsq {
+    position: absolute;
+    
+    width: 100vw;         /* Full width */
+    height: 100vh;        /* Full height */
+    background-image: url('/img/Robert_F_Smith_about_shape2\ \(1\).svg');
+    background-size: contain;        /* Cover entire space */
+    background-position: center;   /* Center the image */
+    background-repeat: no-repeat;
+    z-index: -1;          /* Send it behind everything */
+    background-attachment: fixed;
+  }
   .strategy-box:hover {
     transform: translateY(-8px);
   }
@@ -241,7 +324,7 @@ section{
   
   .strategy-box p {
     font-size: 1rem;
-    color: #555;
+    color: white;
     line-height: 1.6;
   }
   
@@ -335,6 +418,21 @@ section{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.iccs{
+  border-radius: 50%;
+  width: 10%;
+  padding-bottom: 20px;
+}
+.icccs{
+  border-radius: 50%;
+  width: 30%;
+  padding-bottom: 20px;
+}
+.ics{
+  border-radius: 12px;
+  width: 100%;
+  padding-bottom: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -397,16 +495,18 @@ section{
 .how-we-invest {
     
     padding: 60px 20px;
-    font-family: 'Segoe UI', sans-serif;
+      
     position: relative;
     overflow: hidden;
+    margin-bottom: 100px;
+    overflow-x: hidden;
   }
   
   .invest-title {
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    color: #6685c2;
+    
     margin-bottom: 60px;
   }
   
@@ -429,7 +529,7 @@ section{
     top: 0;
     height: 100%;
     width: 2px;
-    background: #d1d5db;
+    background: #606c76;
     transform: translateX(-50%);
     z-index: 0;
   }
@@ -441,10 +541,14 @@ section{
     justify-content: flex-end;
     
   }
+  #bus5{
+    background-color: #3f043b;
+  }
   
   .invest-item.left {
     justify-content: flex-start;
     border-radius: 16px;
+    
     
   }
   .invest-item.right {
@@ -461,7 +565,7 @@ section{
     transform: translateX(-50%);
     height: 16px;
     width: 16px;
-    background: white;
+    background: #010d24;
     border-radius: 50%;
     z-index: 1;
   }
@@ -477,6 +581,7 @@ section{
     z-index: 2;
     transition: all 0.3s ease;
   }
+ 
   
   .invest-content:hover {
     transform: translateY(-5px);
@@ -486,13 +591,13 @@ section{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: white;
   }
   
   .invest-content p {
     font-size: 16px;
     line-height: 1.6;
-    color: #606c76;
+    color: #fff;
   }
   
   /* Responsive */
@@ -516,6 +621,7 @@ section{
     }
     #kil{
       font-size: 1px;
+      
     }
     .we-are-text{
       margin-top: -5vh;
