@@ -542,6 +542,7 @@ ol {
 		background-attachment:scroll;
 		background-image: url(/img/him.webp);
 		background-size: cover;
+		height: 110vh;
 		
 	}
 	.header__logo{
@@ -569,6 +570,7 @@ ol {
 	}
 	.hero__items {
 		position: relative;
+		top: -100px;
 		
 	}
 	.hero__text h2{
@@ -721,6 +723,8 @@ ol {
 }
 .backs {
     position: absolute;
+	overflow-x: hidden;
+	overflow-y: hidden;
     
     width: 100vw;         /* Full width */
     height: 100vh;        /* Full height */
@@ -4104,6 +4108,8 @@ ol {
   }
   .backsq {
     position: absolute;
+	overflow-x: hidden;
+	overflow-y: hidden;
     
     width: 100vw;         /* Full width */
     height: 100vh;        /* Full height */
