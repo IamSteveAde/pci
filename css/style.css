@@ -531,7 +531,7 @@ ol {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     background: url('/img/hero/logos (1).jpg') no-repeat center center;
     background-size: cover;
@@ -730,7 +730,7 @@ ol {
 	overflow-x: hidden;
 	overflow-y: hidden;
     
-    width: 100vw;         /* Full width */
+    width: 100%;         /* Full width */
     height: 100vh;        /* Full height */
     background-image: url('/img/rfsa_pattern.svg');
     background-size: contain;        /* Cover entire space */
@@ -868,8 +868,8 @@ ol {
 }
 
 .unique-carousel-item {
-	flex: 0 0 calc(100vw / 3);
-	max-width: calc(100vw / 3);
+	flex: 0 0 calc(100% / 3);
+	max-width: calc(100% / 3);
 	text-align: center;
 	border: solid 1px #6685c2;
 	padding: 15px;
@@ -913,8 +913,8 @@ ol {
 /* MOBILE VIEW - 2 ITEMS PER SCREEN */
 @media (max-width: 768px) {
 	.unique-carousel-item {
-		flex: 0 0 50vw;
-		max-width: 50vw;
+		flex: 0 0 50%;
+		max-width: 50%;
 		margin-bottom: 200px;
 		
 	}
@@ -940,8 +940,8 @@ ol {
 /* MOBILE VIEW - 1 ITEM PER SCREEN */
 @media (max-width: 480px) {
 	.unique-carousel-item {
-		flex: 0 0 90vw;
-		max-width: 90vw;
+		flex: 0 0 90%;
+		max-width: 90%;
 		left: 5px;
 	}
 }
@@ -4115,7 +4115,7 @@ ol {
 	overflow-x: hidden;
 	overflow-y: hidden;
     
-    width: 100vw;         /* Full width */
+    width: 100%;         /* Full width */
     height: 100vh;        /* Full height */
     background-image: url('/img/Robert_F_Smith_about_shape2\ \(1\).svg');
     background-size: contain;        /* Cover entire space */
@@ -4262,7 +4262,7 @@ body {
 #vaultSlider {
 	display: flex;
 	overflow-x: auto;
-	gap: 64px;
+	gap: 24px;
 	scroll-behavior: smooth;
 	padding-bottom: 16px;
 	
