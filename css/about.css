@@ -690,6 +690,7 @@ section{
     transition: transform 0.3s ease;
   }
  
+ 
     
     
 
@@ -815,10 +816,13 @@ section{
   .card-content {
     
     color: #fff;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 10px;
-    width: 70%;
-    height: 30vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 60%;
+    height: 25vh;
     text-align: center;
     z-index: 2;
     margin-top: 20px;
@@ -827,19 +831,19 @@ section{
   }
   .ups{
     position: relative;
-    top: -60px;
+    top: -28%;
   }
   .downs{
     position: relative;
-    top: 60px;
+    top: 30%;
   }
  .upc{
   position: relative;
-  top: -70px;
+  top: -80%;
  }
  .dwn{
   position: relative;
-  top: 70px;
+  top: 82%;
  }
   
   
@@ -851,7 +855,7 @@ section{
   
   .card-content h4 {
     margin: 0 0 10px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
   }
   
