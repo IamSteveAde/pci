@@ -545,7 +545,7 @@ ol {
 		background-size: contain;
 		width: 100%;
 
-		
+		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-image: url(/img/him.webp);
 	}
