@@ -831,7 +831,7 @@ section{
     overflow: hidden;
   }
   .ups{
-    position: absolute;
+    position: relative;
     top: -28%;
   }
   .downs{
