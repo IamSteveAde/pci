@@ -510,9 +510,9 @@ ol {
 
 .hero {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    
     overflow: hidden;
-   height: 180vh;
+   
     background-attachment: fixed; /* Keeps the background fixed */
     display: flex;
 	background-size: contain;
@@ -552,6 +552,7 @@ ol {
 	
 	body {
         background: none; /* Remove fixed background on mobile */
+		overflow-x: hidden;
     }
 
     .background-fixed {
@@ -565,7 +566,7 @@ ol {
 	}
 
    .hero{
-	height: 60vh;
+	
 	background-repeat: no-repeat;
 	overflow-x: hidden;
    }
@@ -2207,8 +2208,8 @@ ol {
 	
 	margin-top: 50px;
 	margin-right: 30px;
-	border-radius: 50%;
-	padding-bottom: 20px;
+	
+	border-radius: 12px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.285);
 	background-color: #010d24;
 }
@@ -2498,6 +2499,9 @@ ol {
 		width: 30%;
 		margin-left: 40px;
 		line-height: 20px;
+	  }
+	  #mir{
+		display: block;
 	  }
   
 
