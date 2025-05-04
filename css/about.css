@@ -619,6 +619,29 @@ section{
     .invest-item.right {
       justify-content: center;
     }
+    .black-row{
+      display: none;
+    }
+    #cash{
+      width: 50%;
+      height: 30vh;
+      padding-top: 30px;
+    }
+    #cash h4{
+      font-size: 18px;
+    }
+    .line-scroll{
+      gap: -110px;
+    }
+    #noshow{
+      display: none;
+    }
+    #nosho{
+      display: none;
+    }
+    .info-card{
+      margin-left: -120px;
+    }
   
     .invest-content {
       width: 90%;
@@ -665,11 +688,12 @@ section{
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px #6685c2;
     transition: transform 0.3s ease;
-}
+  }
+ 
     
     
 
-  }
+}
   
   .black-values {
     padding: 80px 20px;
@@ -733,7 +757,7 @@ section{
     width: max-content;
     min-width: 1200px;
     padding: 0 60px;
-    gap: 60px;
+    gap: 1px;
   }
   
   .center-line {
@@ -741,7 +765,7 @@ section{
     top: 50%;
     left: 0;
     right: 0;
-    height: 1px;
+    height: 3px;
     background: #6685c2;
     z-index: 1;
   }
@@ -752,6 +776,7 @@ section{
     align-items: center;
     position: relative;
     min-width: 10px;
+    
   }
   
   .icon-node {
@@ -770,7 +795,7 @@ section{
   
   .arrow-line {
     position: absolute;
-    width: 1px;
+    width: 2px;
     background: #6685c2;
     z-index: 0;
   }
