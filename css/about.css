@@ -691,6 +691,7 @@ section{
   }
  
  
+ 
     
     
 
@@ -830,7 +831,7 @@ section{
     overflow: hidden;
   }
   .ups{
-    position: relative;
+    position: absolute;
     top: -28%;
   }
   .downs{
