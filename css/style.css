@@ -4270,6 +4270,9 @@ body {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+* {
+	outline: 1px solid red; /* Visual aid */
+  }
 
 #vaultSlider::-webkit-scrollbar {
 	display: none;
