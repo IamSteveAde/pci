@@ -542,7 +542,7 @@ ol {
 	
 		text-align: center;
 		
-		background-size: contain;
+		background-size: cover;
 		width: 100%;
 
 		background-repeat: no-repeat;
