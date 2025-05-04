@@ -622,9 +622,13 @@ section{
     .black-row{
       display: none;
     }
+    .slide-verse{
+      margin-bottom: 100px;
+    }
+    
     #cash{
       width: 50%;
-      height: 30vh;
+      height: 60%;
       padding-top: 30px;
     }
     #cash h4{
@@ -863,6 +867,13 @@ section{
   .card-content p {
     margin: 0;
     font-size: 14px;
+  }
+  .slide-verse ::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .slide-verse{
+    scrollbar-width: none;
+    margin-bottom: 100px;
   }
   
   
