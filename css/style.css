@@ -519,7 +519,6 @@ ol {
     align-items: center;
     justify-content: center;
 	background-image: url(/img/hero/logos\ \(1\).jpg);
-	background-repeat: no-repeat;
 }
 .background-fixed {
     position: fixed;
@@ -535,7 +534,7 @@ ol {
 
 @media (max-width: 768px) {
 	.hero{
-		height: 80%;
+		
 		background-position: fixed;
 	
 		text-align: center;
@@ -558,9 +557,13 @@ ol {
 	.background-fixeds {
         display: block; /* Show the div on mobile */
     }
+	#backid{
+		display: none;
+	}
 
    .hero{
-	height: 90vh;
+	height: 120vh;
+	background-repeat: no-repeat;
    }
 	.about{
 		background: none;
