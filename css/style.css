@@ -541,6 +541,8 @@ ol {
 		background-repeat: no-repeat;
 		background-attachment:scroll;
 		background-image: url(/img/him.webp);
+		background-size: cover;
+		
 	}
 	.header__logo{
 		margin-left: -10px;
