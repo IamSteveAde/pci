@@ -538,14 +538,16 @@ ol {
 @media (max-width: 768px) {
 	.hero{
 		
-		background-position: fixed;
+		background-position: center;
 	
 		text-align: center;
 		
-		background-size: cover;
+		background-size: contain;
+		width: 100%;
+
 		
 		background-attachment: fixed;
-		background-image: url(/img/hih.webp);
+		background-image: url(/img/hih\ \(2\).webp);
 	}
 	.header__logo{
 		margin-left: -10px;
@@ -576,7 +578,7 @@ ol {
 	}
 	.hero__items {
 		position: relative;
-		top: -200px;
+		
 	}
 	.hero__text h2{
 		font-size: 1px;
