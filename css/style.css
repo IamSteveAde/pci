@@ -542,9 +542,10 @@ ol {
 	
 		text-align: center;
 		
-		background-size: contain;
+		background-size: cover;
 		
 		background-attachment: fixed;
+		background-image: url(/img/hih.webp);
 	}
 	.header__logo{
 		margin-left: -10px;
