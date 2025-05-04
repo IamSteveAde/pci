@@ -39,6 +39,9 @@ body {
 	scroll-behavior: smooth;
 
 }
+.body{
+	overflow-x: hidden;
+}
 @font-face {
 	font-family: 'GothamLight';
 	src: url(/fonts/GOTHAM-LIGHT.TTF);
@@ -64,6 +67,7 @@ h6 {
 	color: white;
 	font-weight: 400;
 	font-family: 'GothamLight', sans-serif;
+	overflow-x: hidden ;
 }
 
 h1 {
@@ -542,7 +546,7 @@ ol {
 		background-attachment:scroll;
 		background-image: url(/img/him.webp);
 		background-size: cover;
-		height: 110vh;
+		height: 90vh;
 		
 	}
 	.header__logo{
@@ -570,7 +574,7 @@ ol {
 	}
 	.hero__items {
 		position: relative;
-		top: -100px;
+		top: -90px;
 		
 	}
 	.hero__text h2{
