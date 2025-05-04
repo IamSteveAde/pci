@@ -520,6 +520,9 @@ ol {
     justify-content: center;
 	background-image: url(/img/hero/logos\ \(1\).jpg);
 }
+#mir{
+	display: none;
+}
 .background-fixed {
     position: fixed;
     top: 0;
@@ -564,6 +567,7 @@ ol {
    .hero{
 	height: 60vh;
 	background-repeat: no-repeat;
+	overflow-x: hidden;
    }
 	.about{
 		background: none;
@@ -2418,7 +2422,12 @@ ol {
 	padding: 50px 0;
 	background-color: #f8f9fa;
 	box-shadow: 5px 5px #6685c2;
-	background-image: url("/img/Background Landscape.jpg");
+	background: linear-gradient(135deg, 
+  #001f4d,   /* Deep Blue */
+    /* Deep Purple (Indigo) */
+   /* Blue */
+  #04383f    /* Lemon Green */
+);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -2449,7 +2458,7 @@ ol {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-	box-shadow: 0 5px 15px rgba(215, 213, 213, 0.3);
+	
 }
 
 /* Number Styling */
