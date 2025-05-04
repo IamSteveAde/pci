@@ -193,7 +193,7 @@
   padding: 10px 20px;
   background-color: transparent;
   border: 1px #6685c2 solid;
-  color: white;
+  color: 010d24;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -202,12 +202,13 @@
 
 .wobbly-tab-btn.active {
   background-color: #6685c2;
-  color: #fff;
+  color: #010d24;
 }
 
 /* Tab Content */
 .wobbly-tab-content {
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .wobbly-tab-panel {
@@ -222,7 +223,7 @@
 
 /* Cards */
 .floopy-card {
-  background-color: #6685c227;
+  
   border: 1px solid #6685c2;
   border-radius: 10px;
   padding: 20px;
@@ -251,9 +252,10 @@
 .zigzag-btn {
   margin-top: 15px;
   padding: 10px;
-  background-color: #6685c2;
+  background-color: transparent;
+  border: 1px solid white;
   color: #fff;
-  border: none;
+
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;

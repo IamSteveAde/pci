@@ -123,7 +123,7 @@ section{
     padding-bottom: 45px;
     padding-left: 29px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+   
     border-bottom-right-radius: 100px;
   }
   .ikon{
@@ -248,6 +248,9 @@ section{
     .value-box {
       flex: 1 1 100%;
     }
+  }
+  .iccs{
+    width: 25%;
   }
 
   .our-strategy {
@@ -441,8 +444,12 @@ section{
         display: grid;
         
     }
+   
     #awe{
       width: 100%;
+    }
+    .iccs{
+      width: 20%;
     }
     .step-number {
       font-size: 25px;
@@ -463,6 +470,7 @@ section{
     .who-we-are-image img{
       padding-left: 20px;
       padding-right: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.285);
      
     }
     .who-we-are-text{
@@ -473,7 +481,11 @@ section{
 
     }
     .ikon{
-      width: 40px;
+      width: 25%;
+    }
+    .afr{
+      height: 40vh;
+      
     }
     .miss h2{
       font-size: 1.17rem;
