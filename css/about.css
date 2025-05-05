@@ -490,7 +490,7 @@ section{
       width: 25%;
     }
     .afr{
-      height: 40vh;
+      height: 20vh;
       
     }
     .miss h2{
@@ -884,8 +884,6 @@ section{
     margin-bottom: 100px;
     height: 100vh;
   }
-  *{
-    outline: 1px solid red;
-  }
+ 
   
   
