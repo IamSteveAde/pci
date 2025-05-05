@@ -160,7 +160,7 @@ section{
     position: absolute;
     overflow-x: hidden;
     
-    width: 100vw;         /* Full width */
+    width: 100%;         /* Full width */
     height: 100vh;        /* Full height */
     background-image: url('/img/rfsa_pattern.svg');
     background-size: contain;        /* Cover entire space */
@@ -304,7 +304,7 @@ section{
     position: absolute;
     overflow-x: hidden;
     
-    width: 100vw;         /* Full width */
+    width: 100%;         /* Full width */
     height: 100vh;        /* Full height */
     background-image: url('/img/Robert_F_Smith_about_shape2\ \(1\).svg');
     background-size: contain;        /* Cover entire space */
