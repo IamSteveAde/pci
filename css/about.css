@@ -836,7 +836,7 @@ section{
     padding-right: 20px;
     width: 60%;
     height: 25vh;
-    text-align: center;
+    text-align: left;
     z-index: 2;
     margin-top: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
@@ -883,6 +883,9 @@ section{
     scrollbar-width: none;
     margin-bottom: 100px;
     height: 100vh;
+  }
+  *{
+    outline: 1px solid red;
   }
   
   
