@@ -771,8 +771,8 @@ section{
     top: 50%;
     left: 0;
     right: 0;
-    height: 3px;
-    background: #6685c2;
+    height: 2px;
+    background: #010d243f;
     z-index: 1;
   }
   
@@ -784,6 +784,9 @@ section{
     min-width: 10px;
     
   }
+  *{
+    outline: 1px solid red;
+  }
   
   .icon-node {
     z-index: 2;
@@ -794,7 +797,7 @@ section{
   }
   
   .icon-node img {
-    width: 80px;
+    width: 150px;
     
     border-radius: 50%;
   }
@@ -802,7 +805,7 @@ section{
   .arrow-line {
     position: absolute;
     width: 2px;
-    background: #6685c2;
+    background: #010d2448;
     z-index: 0;
   }
   
