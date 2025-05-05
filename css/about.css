@@ -158,6 +158,7 @@ section{
   }
   .backs {
     position: absolute;
+    overflow-x: hidden;
     
     width: 100vw;         /* Full width */
     height: 100vh;        /* Full height */
@@ -301,6 +302,7 @@ section{
   }
   .backsq {
     position: absolute;
+    overflow-x: hidden;
     
     width: 100vw;         /* Full width */
     height: 100vh;        /* Full height */
@@ -784,12 +786,10 @@ section{
     min-width: 10px;
     
   }
-  *{
-    outline: 1px solid red;
-  }
+ 
   
   .icon-node {
-    z-index: 2;
+    z-index: 0;
    
     border-radius: 50%;
     padding: 10px;
@@ -797,7 +797,7 @@ section{
   }
   
   .icon-node img {
-    width: 150px;
+    width: 110px;
     
     border-radius: 50%;
   }
@@ -805,18 +805,19 @@ section{
   .arrow-line {
     position: absolute;
     width: 2px;
+    
     background: #010d2448;
     z-index: 0;
   }
   
   .up .arrow-line {
-    height: 60px;
+    height: 160px;
     top: 50%;
     transform: translateY(-100%);
   }
   
   .down .arrow-line {
-    height: 60px;
+    height: 160px;
     bottom: 50%;
     transform: translateY(100%);
   }
@@ -839,11 +840,11 @@ section{
   }
   .ups{
     position: relative;
-    top: -28%;
+    top: -42%;
   }
   .downs{
     position: relative;
-    top: 30%;
+    top: 42%;
   }
  .upc{
   position: relative;
@@ -877,6 +878,7 @@ section{
   .slide-verse{
     scrollbar-width: none;
     margin-bottom: 100px;
+    height: 100vh;
   }
   
   
