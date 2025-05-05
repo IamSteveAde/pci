@@ -775,7 +775,7 @@ section{
     right: 0;
     height: 2px;
     background: #010d243f;
-    z-index: 1;
+    z-index: -99;
   }
   
   .info-card {
@@ -807,17 +807,17 @@ section{
     width: 2px;
     
     background: #010d2448;
-    z-index: 0;
+    z-index: -999;
   }
   
   .up .arrow-line {
-    height: 160px;
+    height: 100px;
     top: 50%;
     transform: translateY(-100%);
   }
   
   .down .arrow-line {
-    height: 160px;
+    height: 100px;
     bottom: 50%;
     transform: translateY(100%);
   }
@@ -840,11 +840,11 @@ section{
   }
   .ups{
     position: relative;
-    top: -42%;
+    top: -32%;
   }
   .downs{
     position: relative;
-    top: 42%;
+    top: 32%;
   }
  .upc{
   position: relative;
@@ -879,6 +879,9 @@ section{
     scrollbar-width: none;
     margin-bottom: 100px;
     height: 100vh;
+  }
+  *{
+    outline: 1px solid red;
   }
   
   
