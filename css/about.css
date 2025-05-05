@@ -1,4 +1,5 @@
 body{
+  overflow-x: hidden;
   
 }
 section{
@@ -446,6 +447,9 @@ section{
         display: grid;
         
     }
+    body{
+      overflow-x: hidden;
+    }
    
     #awe{
       width: 100%;
@@ -879,9 +883,6 @@ section{
     scrollbar-width: none;
     margin-bottom: 100px;
     height: 100vh;
-  }
-  *{
-    outline: 1px solid red;
   }
   
   
