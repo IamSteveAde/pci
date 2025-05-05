@@ -189,6 +189,25 @@ ol {
 	color: #ffffff;
 	position: relative;
 }
+.animated-africa {
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(
+      270deg,
+      #e63946,
+      #f4a261,
+      #f6bd60,
+      #2a9d8f,
+      #264653,
+      #8338ec,
+      #e63946
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: rainbowFlow 5s linear infinite;
+  }
 
 .primary-btn.normal-btn {
 	color: white;
