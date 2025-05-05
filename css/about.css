@@ -839,7 +839,7 @@ section{
     text-align: left;
     z-index: 2;
     margin-top: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgb(28, 27, 27);
     overflow: hidden;
   }
   .ups{
