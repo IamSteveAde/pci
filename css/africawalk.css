@@ -6,8 +6,8 @@ body{
     overflow-y: hidden;
   }
   .hero-eagle {
-    background: linear-gradient(rgba(0, 0, 0, 0.881), rgba(0, 0, 0, 0.792)),
-                url('/img/afrwalk.png') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.881), rgba(0, 0, 0, 0.411)),
+                url('/img/afrwalk\ \(1\).webp') center/cover no-repeat;
     color: #fff;
    
     text-align: center;
@@ -133,7 +133,7 @@ body{
     
   }
   .qaz{
-    color: rgb(58, 58, 58);
+    
     font-size: 25px;
     font-weight: 10px;
     
@@ -230,7 +230,7 @@ body{
       z-index: -1;          /* Send it behind everything */
     }
     
-    .why-we-are-text {
+    .why-we-are-texto {
       flex: 1;
       font-size: 14px;
      
@@ -247,6 +247,23 @@ body{
       
       
     }
+    .why-we-are-text {
+        flex: 1;
+        font-size: 14px;
+       
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+        
+        
+      }
     .why-we-are-text p{
       
       
@@ -542,13 +559,21 @@ body{
         padding-left: 20px;
         padding-right: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.285);
+        padding-bottom: 100px;
+        padding-top: -150px;
+        width: 100%;
        
+      }
+      .why-we-are-image{
+        width: 100%;
       }
       .why-we-are-text{
        
         padding-left: 20px;
         padding-right: 20px;
         margin-top: -150px;
+        
+
   
       }
       .ikon{
@@ -564,6 +589,10 @@ body{
       .section-title h2{
         font-size: 1.19rem;
       }
+      #nosowa{
+        display: none;
+      }
+      
       
   }
   
@@ -572,6 +601,9 @@ body{
           width: 100%;
       }
       
+  }
+  #noshows{
+    display: none;
   }
   /* Section Base */
   /* Section Base */
@@ -692,6 +724,10 @@ body{
       }
       .black-row{
         display: none;
+      }
+      .krim{
+        display:block;
+        width: 100%;
       }
       .slide-verse{
         margin-bottom: 100px;
@@ -1026,7 +1062,39 @@ body{
     }
     .sections-titlew{
         font-size: 200px;
-        width: 90vw;
+        
     }
   }
-      
+
+  .ima {
+    background-image: url(/img/buks.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* or 'contain', but 'cover' usually looks better */
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @supports (-webkit-overflow-scrolling: touch) {
+    .ima {
+      background-attachment: scroll; /* fallback for mobile */
+    }
+  }
+  .imas {
+    background-image: url(/img/buks1.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* or 'contain', but 'cover' usually looks better */
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @supports (-webkit-overflow-scrolling: touch) {
+    .imas {
+      background-attachment: scroll; /* fallback for mobile */
+    }
+  }
