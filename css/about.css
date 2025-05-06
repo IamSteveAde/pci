@@ -123,13 +123,13 @@ section{
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 29px;
-    border-radius: 20px;
    
-    border-bottom-right-radius: 100px;
+   
+    
   }
   .ikon{
-   border-radius: 50%;
-    width: 30%;
+   border-radius: 10px;
+    width: 20%;
     padding-bottom: 30px;
     
   }
@@ -476,7 +476,7 @@ section{
     .who-we-are-image img{
       padding-left: 20px;
       padding-right: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.285);
+      
      
     }
     .who-we-are-text{
@@ -710,8 +710,8 @@ section{
   .black-values {
     padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(180deg, rgba(10, 10, 10, 0.8), rgba(17, 17, 17, 0.8)),
-                url(/img/blk.webp);
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.591), rgba(17, 17, 17, 0.8)),
+                url(/img/afhis.png);
     background-size: cover; /* Make the image cover the entire area */
     background-position: center; /* Ensure the image is centered */
     background-repeat: no-repeat; /* Prevent image repetition */
@@ -730,7 +730,7 @@ section{
     position: relative;
     font-size: 120px;
     font-weight: 900;
-    color: #1c1c1c;
+    color: #00000051;
     transition: color 0.3s ease;
     cursor: pointer;
     background-attachment: fixed;

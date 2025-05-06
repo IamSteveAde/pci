@@ -219,6 +219,15 @@
     width: 70%;
     max-width: 500px;
     text-align: center;
+    background-color: white;
+  }
+  .modal-content h2{
+    color: rgb(0, 0, 15);
+    font-weight: 600;
+  }
+  .modal-content p{
+    color: rgb(0, 0, 15);
+    font-weight: 600;
   }
   
   .close-modal {
