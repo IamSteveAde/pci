@@ -139,7 +139,7 @@ body{
     
   }
   .who-we-are {
-      padding: 80px 10%;
+      padding: 40px 10%;
       
       
       font-family: 'GothamLight', sans-serif;
@@ -1048,6 +1048,9 @@ body{
       grid-template-columns: 1fr;
       width: 100%;
       
+    }
+    #pds{
+        margin-top: -30px;
     }
     .glimpse-frame{
         width: 90vw;

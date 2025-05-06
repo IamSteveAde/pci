@@ -80,7 +80,7 @@
   }
 
   .roadmap-lux div {
-    background: #6685c22e;
+    
     padding: 1.5rem;
     border-left: 4px solid #6685c2;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -96,7 +96,7 @@
   }
 
   .chroma-challenge-card {
-    background: #6685c228;
+    
     border: 1px solid #6685c2;
     padding: 1.5rem;
     width: 300px;
@@ -129,7 +129,7 @@
   }
 
   .eco-card {
-    background: #6685c228;
+    
     padding: 1.5rem;
     width: 280px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
